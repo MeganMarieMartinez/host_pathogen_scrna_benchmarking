@@ -69,12 +69,16 @@ for sample_name in samples:
     '''
 
     # running cell ranger
-    cellranger_command = f'cellranger count --id {sample_name}--transcriptome {genome_directory} --fastqs {infile} --sample {sample_name} --localcores {LOCAL_CORES} --localmem {LOCAL_MEM} --create-bam false'
+    cellranger_command = f'cellranger count --id {sample_name} --transcriptome {genome_directory} --fastqs {infile} --sample {sample_name} --localcores {LOCAL_CORES} --localmem {LOCAL_MEM} --create-bam false'
+    print(cellranger_command)
+    
 
     start_time = time.perf_counter()
     result = subprocess.run(cellranger_command, shell = True)
     end_time = end_time = time.perf_counter()
-    elapsed_time = start_time - end_time
+    elapsed_time = end_time - start_time
+    print(result.stdout)
+    print(result.stderr)
     print(f"Elapsed time: {elapsed_time:.6f} seconds")
 
     status = result.returncode
