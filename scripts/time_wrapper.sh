@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # usage: time_wrapper.sh <tool> <dataset> <command...>
+#Logs elapsed time and peak memory to a TSV
+
 set -euo pipefail
 tool=$1; dataset=$2; shift 2
 log=$(mktemp)
