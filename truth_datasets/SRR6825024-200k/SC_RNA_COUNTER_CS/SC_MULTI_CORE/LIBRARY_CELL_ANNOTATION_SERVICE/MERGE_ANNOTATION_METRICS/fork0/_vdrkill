@@ -1,0 +1,19 @@
+{
+    "timestamp": "2026-10-20T14:03:47.311849214-05:00",
+    "paths": [
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/LIBRARY_CELL_ANNOTATION_SERVICE/MERGE_ANNOTATION_METRICS/fork0/chnk0-u46a4d7bb13/files/summary.json"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-10-20T14:03:47.026503169-05:00",
+            "DeltaBytes": 5928
+        },
+        {
+            "Timestamp": "2026-10-20T14:03:47.311849214-05:00",
+            "DeltaBytes": -545
+        }
+    ],
+    "count": 1,
+    "size": 545
+}

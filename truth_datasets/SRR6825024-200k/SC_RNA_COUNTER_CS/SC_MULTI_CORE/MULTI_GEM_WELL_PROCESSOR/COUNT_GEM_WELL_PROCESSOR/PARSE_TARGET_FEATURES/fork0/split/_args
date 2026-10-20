@@ -1,0 +1,7 @@
+{
+    "filter_probes": null,
+    "gene_index": "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/FULL_COUNT_INPUTS/WRITE_GENE_INDEX/fork0/chnk0-u46a4d7b9e6/files/gene_index.json",
+    "is_antibody_only": false,
+    "target_set": null,
+    "target_set_name": null
+}

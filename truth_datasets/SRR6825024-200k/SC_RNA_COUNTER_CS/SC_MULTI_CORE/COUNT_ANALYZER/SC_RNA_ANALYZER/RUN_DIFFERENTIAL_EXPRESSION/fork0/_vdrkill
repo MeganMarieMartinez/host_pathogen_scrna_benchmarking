@@ -1,0 +1,36 @@
+{
+    "timestamp": "2026-10-20T14:03:15.696752851-05:00",
+    "paths": [
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk0-u46a4d7bae9/files/diffexp.bincode.lz4",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk1-u46a4d7bae9/files/diffexp.bincode.lz4",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk2-u46a4d7bae9/files/diffexp.bincode.lz4",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk3-u46a4d7bae9/files/diffexp.bincode.lz4",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk4-u46a4d7bae9/files/diffexp.bincode.lz4",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk5-u46a4d7bae9/files/diffexp.bincode.lz4",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk6-u46a4d7bae9/files/diffexp.bincode.lz4",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk7-u46a4d7bae9/files/diffexp.bincode.lz4",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/join-u46a4d7bae8/files/diffexp_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/join-u46a4d7bae8/files/diffexp_h5.h5"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-10-20T14:03:04.774827286-05:00",
+            "DeltaBytes": 14626
+        },
+        {
+            "Timestamp": "2026-10-20T14:03:09.630805597-05:00",
+            "DeltaBytes": 2752635
+        },
+        {
+            "Timestamp": "2026-10-20T14:03:14.560400225-05:00",
+            "DeltaBytes": 38550958
+        },
+        {
+            "Timestamp": "2026-10-20T14:03:15.100093924-05:00",
+            "DeltaBytes": -41230496
+        }
+    ],
+    "count": 30,
+    "size": 41230496
+}

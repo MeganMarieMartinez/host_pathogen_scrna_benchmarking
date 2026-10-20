@@ -1,0 +1,54 @@
+{
+    "__mem_gb": 2,
+    "__threads": 1,
+    "__vmem_gb": 5,
+    "barcode_index_output": {
+        "index": "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/WRITE_BARCODE_INDEX/fork0/chnk0-u5bc9d50279/files/barcode_index.bi.bincode",
+        "num_barcodes": 21604
+    },
+    "chemistry_defs": {
+        "Gene Expression": {
+            "barcode": [
+                {
+                    "kind": "gel_bead",
+                    "length": 16,
+                    "offset": 0,
+                    "read_type": "R1",
+                    "whitelist": {
+                        "name": "737K-august-2016",
+                        "part": null,
+                        "slide": null,
+                        "strand": "+",
+                        "translation": false,
+                        "translation_whitelist_path": null
+                    }
+                }
+            ],
+            "barcode_extraction": null,
+            "description": "Single Cell 3' v2",
+            "endedness": "three_prime",
+            "name": "SC3Pv2",
+            "rna": {
+                "length": null,
+                "min_length": null,
+                "offset": 0,
+                "read_type": "R2"
+            },
+            "rna2": null,
+            "strandedness": "+",
+            "umi": [
+                {
+                    "length": 10,
+                    "min_length": null,
+                    "offset": 16,
+                    "read_type": "R1"
+                }
+            ]
+        }
+    },
+    "counts": [
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk0-u5bc9d50279/files/bc_sort.csf"
+    ],
+    "feature_reference": "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/split-u5bc9d5026b/files/feature_reference.frf.bincode",
+    "sample_id": "SRR6825024-200k"
+}

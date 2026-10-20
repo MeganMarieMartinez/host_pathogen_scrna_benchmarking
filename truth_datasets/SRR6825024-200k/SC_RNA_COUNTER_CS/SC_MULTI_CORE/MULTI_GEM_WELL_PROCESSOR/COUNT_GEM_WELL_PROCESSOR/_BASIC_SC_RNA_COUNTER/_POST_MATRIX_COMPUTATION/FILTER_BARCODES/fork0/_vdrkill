@@ -1,0 +1,41 @@
+{
+    "timestamp": "2026-10-20T14:03:54.591484351-05:00",
+    "paths": [
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/chnk0-u46a4d7ba84/files/co_mitochondrial_summary.csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/chnk0-u46a4d7ba84/files/filtered_bcs_groups.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/chnk0-u46a4d7ba84/files/filtered_metrics_groups.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/chnk0-u46a4d7ba84/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/join-u46a4d7ba82/files/mitochondrial_summary.csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/join-u46a4d7ba82/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/join-u46a4d7ba82/files/filtered_barcodes.csv"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-10-20T14:01:22.040679116-05:00",
+            "DeltaBytes": 8486
+        },
+        {
+            "Timestamp": "2026-10-20T14:01:24.709631753-05:00",
+            "DeltaBytes": 302614
+        },
+        {
+            "Timestamp": "2026-10-20T14:01:28.719271345-05:00",
+            "DeltaBytes": 1790488
+        },
+        {
+            "Timestamp": "2026-10-20T14:01:31.615786777-05:00",
+            "DeltaBytes": -291051
+        },
+        {
+            "Timestamp": "2026-10-20T14:03:07.382131794-05:00",
+            "DeltaBytes": -1248
+        },
+        {
+            "Timestamp": "2026-10-20T14:03:54.591484351-05:00",
+            "DeltaBytes": -243516
+        }
+    ],
+    "count": 7,
+    "size": 535815
+}

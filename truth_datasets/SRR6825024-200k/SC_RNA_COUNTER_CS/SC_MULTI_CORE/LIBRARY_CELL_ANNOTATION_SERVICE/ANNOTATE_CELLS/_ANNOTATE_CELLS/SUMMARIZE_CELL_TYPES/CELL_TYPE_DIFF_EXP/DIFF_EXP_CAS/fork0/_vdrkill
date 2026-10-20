@@ -1,0 +1,28 @@
+{
+    "timestamp": "2026-10-20T14:03:44.204734304-05:00",
+    "paths": [
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/LIBRARY_CELL_ANNOTATION_SERVICE/ANNOTATE_CELLS/_ANNOTATE_CELLS/SUMMARIZE_CELL_TYPES/CELL_TYPE_DIFF_EXP/DIFF_EXP_CAS/fork0/chnk0-u46a4d7bb0d/files/diffexp.bincode.lz4",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/LIBRARY_CELL_ANNOTATION_SERVICE/ANNOTATE_CELLS/_ANNOTATE_CELLS/SUMMARIZE_CELL_TYPES/CELL_TYPE_DIFF_EXP/DIFF_EXP_CAS/fork0/join-u46a4d7bb0c/files/diffexp_h5.h5"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-10-20T14:03:40.827773785-05:00",
+            "DeltaBytes": 6224
+        },
+        {
+            "Timestamp": "2026-10-20T14:03:41.036766457-05:00",
+            "DeltaBytes": 387562
+        },
+        {
+            "Timestamp": "2026-10-20T14:03:43.748216182-05:00",
+            "DeltaBytes": 10503910
+        },
+        {
+            "Timestamp": "2026-10-20T14:03:44.204734304-05:00",
+            "DeltaBytes": -5328002
+        }
+    ],
+    "count": 2,
+    "size": 5328002
+}

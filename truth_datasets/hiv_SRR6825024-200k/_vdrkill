@@ -1,0 +1,420 @@
+{
+    "timestamp": "2026-10-18T12:34:49.213335401-05:00",
+    "paths": [
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/FULL_COUNT_INPUTS/WRITE_GENE_INDEX/fork0/chnk0-u5bc9d50219/files/gene_index.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/COMBINE_CLUSTERING/fork0/chnk0-u5bc9d50308/files/clustering_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/COMBINE_CLUSTERING/fork0/chnk0-u5bc9d50308/files/clustering_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/PREPROCESS_MATRIX/fork0/join-u5bc9d502ae/files/cloupe_matrix_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/PREPROCESS_MATRIX/fork0/join-u5bc9d502ae/files/preprocessed_matrix_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk0-u5bc9d50309/files/diffexp.bincode.lz4",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk1-u5bc9d50309/files/diffexp.bincode.lz4",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk2-u5bc9d50309/files/diffexp.bincode.lz4",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk3-u5bc9d50309/files/diffexp.bincode.lz4",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk4-u5bc9d50309/files/diffexp.bincode.lz4",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk5-u5bc9d50309/files/diffexp.bincode.lz4",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk6-u5bc9d50309/files/diffexp.bincode.lz4",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk7-u5bc9d50309/files/diffexp.bincode.lz4",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/join-u5bc9d50308/files/diffexp_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/join-u5bc9d50308/files/diffexp_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/chnk0-u5bc9d502b6/files/clusters_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/chnk0-u5bc9d502b6/files/clusters_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/join-u5bc9d502b6/files/clusters_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/join-u5bc9d502b6/files/clusters_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk0-u5bc9d502ba/files/kmeans_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk0-u5bc9d502ba/files/kmeans_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk1-u5bc9d502ba/files/kmeans_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk1-u5bc9d502ba/files/kmeans_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk2-u5bc9d502ba/files/kmeans_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk2-u5bc9d502ba/files/kmeans_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk3-u5bc9d502ba/files/kmeans_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk3-u5bc9d502ba/files/kmeans_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk4-u5bc9d502ba/files/kmeans_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk4-u5bc9d502ba/files/kmeans_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk5-u5bc9d502ba/files/kmeans_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk5-u5bc9d502ba/files/kmeans_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk6-u5bc9d502ba/files/kmeans_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk6-u5bc9d502ba/files/kmeans_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk7-u5bc9d502ba/files/kmeans_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk7-u5bc9d502ba/files/kmeans_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk8-u5bc9d502ba/files/kmeans_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk8-u5bc9d502ba/files/kmeans_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/join-u5bc9d502b6/files/kmeans_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/join-u5bc9d502b6/files/kmeans_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_PCA/fork0/chnk0-u5bc9d502b5/files/pca_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_PCA/fork0/chnk0-u5bc9d502b5/files/pca_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_PCA/fork0/join-u5bc9d502b4/files/pca_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_PCA/fork0/join-u5bc9d502b4/files/pca_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_UMAP/fork0/chnk0-u5bc9d502b6/files/umap_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_UMAP/fork0/chnk0-u5bc9d502b6/files/umap_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_UMAP/fork0/join-u5bc9d502b6/files/umap_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_UMAP/fork0/join-u5bc9d502b6/files/umap_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/SUMMARIZE_ANALYSIS/fork0/chnk0-u5bc9d50313/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/SUMMARIZE_ANALYSIS/fork0/chnk0-u5bc9d50313/files/analysis",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/LIBRARY_CELL_ANNOTATION_SERVICE/ANNOTATE_CELLS/_ANNOTATE_CELLS/CREATE_META_CELLS/fork0/join-u5bc9d50314/files/filtered_metacell_matrix.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_CHEMISTRY_DETECTOR/COMBINE_CHEMISTRY_DEFS/fork0/chnk0-u5bc9d5026a/files/chemistry_defs.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/MULTI_SETUP_CHUNKS/fork0/chnk0-u5bc9d5026a/files/chunks.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk0-u5bc9d50279/files/bam_header.sam",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk0-u5bc9d50279/files/barcode_summary.bsf.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/join-u5bc9d50278/files/bam_header.sam",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk0-u5bc9d50279/files/bc_sort.csf",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/join-u5bc9d50278/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/join-u5bc9d50278/files/barcode_summary.csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk0-u5bc9d50279/files/bc_umi_info.bui",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk0-u5bc9d50279/files/metrics_shard.bmsf",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/BARCODE_CORRECTION/fork0/chnk0-u5bc9d50278/files/Gene Expression_sorted_barcode_counts.sbc.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/BARCODE_CORRECTION/fork0/chnk0-u5bc9d50278/files/chunk_summary.bcm.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/BARCODE_CORRECTION/fork0/chnk0-u5bc9d50278/files/invalid_barcode_counts.sbc.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/BARCODE_CORRECTION/fork0/chnk0-u5bc9d50278/files/invalid_shard.shard",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/BARCODE_CORRECTION/fork0/chnk0-u5bc9d50278/files/valid_shard.shard",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/BARCODE_CORRECTION/fork0/join-u5bc9d50277/files/Gene Expression_corrected_barcode_counts.sbc.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/BARCODE_CORRECTION/fork0/join-u5bc9d50277/files/invalid_barcode_counts.sbc.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/BARCODE_CORRECTION/fork0/join-u5bc9d50277/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/COLLATE_METRICS/fork0/chnk0-u5bc9d5029e/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/COLLATE_METRICS/fork0/chnk0-u5bc9d5029e/files/per_barcode_metrics.csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/chnk0-u5bc9d50275/files/bc_correct_summary.bcm.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/chnk0-u5bc9d50275/files/chunk_hist.msh.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/chnk0-u5bc9d50275/files/chunk_summary.msm.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/chnk0-u5bc9d50275/files/feature_counts.fbc.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/chnk0-u5bc9d50275/files/valid_bc_counts.sbc.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/chnk0-u5bc9d50275/files/invalid.shard",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/join-u5bc9d5026b/files/Gene Expression_valid_barcode_counts.sbc.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/join-u5bc9d5026b/files/barcode_segment_counts.bsc.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/join-u5bc9d5026b/files/bc_correct_summary.bcm.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/chnk0-u5bc9d50275/files/valid.shard",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/join-u5bc9d5026b/files/feature_counts.fbc.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/join-u5bc9d5026b/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/split-u5bc9d5026b/files/feature_reference.frf.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/join-u5bc9d5026b/files/sequencing_metrics.smf.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MERGE_METRICS/fork0/chnk0-u5bc9d502a0/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/SUMMARIZE_MATRIX_DIMS/fork0/chnk0-u5bc9d5029f/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/WRITE_BARCODE_INDEX/fork0/chnk0-u5bc9d50279/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/WRITE_BARCODE_INDEX/fork0/chnk0-u5bc9d50279/files/barcode_index.bi.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/WRITE_BARCODE_SUMMARY/fork0/join-u5bc9d5029e/files/barcode_summary.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/COMPUTE_SUBSEQ_METRICS/fork0/chnk0-u5bc9d502aa/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/chnk0-u5bc9d502a3/files/co_mitochondrial_summary.csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/chnk0-u5bc9d502a3/files/filtered_bcs_groups.bincode",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/chnk0-u5bc9d502a3/files/filtered_metrics_groups.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/chnk0-u5bc9d502a3/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/join-u5bc9d502a0/files/mitochondrial_summary.csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/join-u5bc9d502a0/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/join-u5bc9d502a0/files/filtered_barcodes.csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/MERGE_METRICS/fork0/chnk0-u5bc9d5030c/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/SUMMARIZE_MATRIX_DIMS/fork0/chnk0-u5bc9d502aa/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/_CELLS_REPORTER/SUBSAMPLE_READS/fork0/chnk0-u5bc9d502b0/files/metrics.pickle.gz",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/_CELLS_REPORTER/SUBSAMPLE_READS/fork0/join-u5bc9d502ac/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/_CELLS_REPORTER/SUMMARIZE_BASIC_REPORTS/fork0/join-u5bc9d50306/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/_CELLS_REPORTER/WRITE_MOLECULE_INFO/fork0/join-u5bc9d502aa/files/non_multiplexed_summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_REPORTER/CLOUPE_PREPROCESS/fork0/join-u5bc9d5032b/files/gem_group_index_json.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_REPORTER/CLOUPE_PREPROCESS/fork0/join-u5bc9d5032b/files/output_for_cloupe.cloupe",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/WRITE_GENE_INDEX/fork0/chnk0-u5bc9d50219/files/gene_index.json"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-10-18T12:27:27.096783059-05:00",
+            "DeltaBytes": 18404
+        },
+        {
+            "Timestamp": "2026-10-18T12:27:39.200229346-05:00",
+            "DeltaBytes": 16357
+        },
+        {
+            "Timestamp": "2026-10-18T12:30:01.521538752-05:00",
+            "DeltaBytes": 375692876
+        },
+        {
+            "Timestamp": "2026-10-18T12:30:26.020796535-05:00",
+            "DeltaBytes": -187836579
+        },
+        {
+            "Timestamp": "2026-10-18T12:31:22.136510556-05:00",
+            "DeltaBytes": 39187
+        },
+        {
+            "Timestamp": "2026-10-18T12:31:23.255064334-05:00",
+            "DeltaBytes": 8167935
+        },
+        {
+            "Timestamp": "2026-10-18T12:31:33.599171196-05:00",
+            "DeltaBytes": 24082294
+        },
+        {
+            "Timestamp": "2026-10-18T12:31:35.275813016-05:00",
+            "DeltaBytes": 1834771
+        },
+        {
+            "Timestamp": "2026-10-18T12:31:35.537523306-05:00",
+            "DeltaBytes": -1819350
+        },
+        {
+            "Timestamp": "2026-10-18T12:31:35.578216278-05:00",
+            "DeltaBytes": 20416
+        },
+        {
+            "Timestamp": "2026-10-18T12:31:36.185990975-05:00",
+            "DeltaBytes": 2400094
+        },
+        {
+            "Timestamp": "2026-10-18T12:31:36.977783169-05:00",
+            "DeltaBytes": -2857321
+        },
+        {
+            "Timestamp": "2026-10-18T12:31:37.010890782-05:00",
+            "DeltaBytes": 7987975
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:13.957459005-05:00",
+            "DeltaBytes": 967723
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:14.208985239-05:00",
+            "DeltaBytes": -25349375
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:14.258936054-05:00",
+            "DeltaBytes": 4213611
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:15.173641741-05:00",
+            "DeltaBytes": 5250
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:15.201268297-05:00",
+            "DeltaBytes": -1158865
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:15.458815167-05:00",
+            "DeltaBytes": 23942
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:16.041101814-05:00",
+            "DeltaBytes": 23466
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:16.650931396-05:00",
+            "DeltaBytes": -8095
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:19.312554767-05:00",
+            "DeltaBytes": 304599
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:23.531450872-05:00",
+            "DeltaBytes": 2301401
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:26.673825392-05:00",
+            "DeltaBytes": -1242370
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:26.717790194-05:00",
+            "DeltaBytes": 32954
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:27.168644683-05:00",
+            "DeltaBytes": 1884019
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:28.598811536-05:00",
+            "DeltaBytes": -13213048
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:28.789531722-05:00",
+            "DeltaBytes": 30538
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:30.653608429-05:00",
+            "DeltaBytes": 5878
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:32.214469551-05:00",
+            "DeltaBytes": 2443525
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:36.902805971-05:00",
+            "DeltaBytes": -675334
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:36.941298236-05:00",
+            "DeltaBytes": 10699
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:37.275795809-05:00",
+            "DeltaBytes": 7170686
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:38.057963891-05:00",
+            "DeltaBytes": 4767292
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:38.223537687-05:00",
+            "DeltaBytes": -7164936
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:38.244400786-05:00",
+            "DeltaBytes": 18179
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:42.134211489-05:00",
+            "DeltaBytes": 304819
+        },
+        {
+            "Timestamp": "2026-10-18T12:33:09.880478295-05:00",
+            "DeltaBytes": 714957
+        },
+        {
+            "Timestamp": "2026-10-18T12:33:51.042645593-05:00",
+            "DeltaBytes": 6220
+        },
+        {
+            "Timestamp": "2026-10-18T12:33:54.282880034-05:00",
+            "DeltaBytes": 1990118
+        },
+        {
+            "Timestamp": "2026-10-18T12:33:55.883426792-05:00",
+            "DeltaBytes": 295544
+        },
+        {
+            "Timestamp": "2026-10-18T12:33:56.035904193-05:00",
+            "DeltaBytes": 80904
+        },
+        {
+            "Timestamp": "2026-10-18T12:33:56.046097491-05:00",
+            "DeltaBytes": -289039
+        },
+        {
+            "Timestamp": "2026-10-18T12:33:56.81169643-05:00",
+            "DeltaBytes": 711938
+        },
+        {
+            "Timestamp": "2026-10-18T12:33:57.009705803-05:00",
+            "DeltaBytes": -705566
+        },
+        {
+            "Timestamp": "2026-10-18T12:33:57.038041323-05:00",
+            "DeltaBytes": 1899338
+        },
+        {
+            "Timestamp": "2026-10-18T12:33:58.679750653-05:00",
+            "DeltaBytes": -1350126
+        },
+        {
+            "Timestamp": "2026-10-18T12:33:58.708420598-05:00",
+            "DeltaBytes": 8269
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:00.043486044-05:00",
+            "DeltaBytes": -3822468
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:00.078265075-05:00",
+            "DeltaBytes": 2255861
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:00.819029376-05:00",
+            "DeltaBytes": -289039
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:00.839981039-05:00",
+            "DeltaBytes": 14695
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:04.340825043-05:00",
+            "DeltaBytes": -1723901
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:05.735713066-05:00",
+            "DeltaBytes": 2968751
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:05.994096106-05:00",
+            "DeltaBytes": -73897
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:10.878120211-05:00",
+            "DeltaBytes": 38967261
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:11.479746207-05:00",
+            "DeltaBytes": -2835442
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:11.520540438-05:00",
+            "DeltaBytes": 46961489
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:12.351735097-05:00",
+            "DeltaBytes": -46963590
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:12.384762467-05:00",
+            "DeltaBytes": 15875
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:14.414279955-05:00",
+            "DeltaBytes": 681201
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:16.129936523-05:00",
+            "DeltaBytes": 11670
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:18.02568821-05:00",
+            "DeltaBytes": 6267
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:19.650522195-05:00",
+            "DeltaBytes": 6126
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:22.070214539-05:00",
+            "DeltaBytes": -675334
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:22.198572393-05:00",
+            "DeltaBytes": 43964
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:24.526685428-05:00",
+            "DeltaBytes": 11153
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:26.396268596-05:00",
+            "DeltaBytes": 29667
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:30.591604509-05:00",
+            "DeltaBytes": 12395568
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:35.199465065-05:00",
+            "DeltaBytes": -1025623
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:35.239502028-05:00",
+            "DeltaBytes": 85610
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:35.572167966-05:00",
+            "DeltaBytes": -905
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:37.08758934-05:00",
+            "DeltaBytes": 3223441
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:48.612839978-05:00",
+            "DeltaBytes": -21342865
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:48.643145327-05:00",
+            "DeltaBytes": 6433440
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:49.080318807-05:00",
+            "DeltaBytes": -187837285
+        }
+    ],
+    "count": 203,
+    "size": 510260353
+}

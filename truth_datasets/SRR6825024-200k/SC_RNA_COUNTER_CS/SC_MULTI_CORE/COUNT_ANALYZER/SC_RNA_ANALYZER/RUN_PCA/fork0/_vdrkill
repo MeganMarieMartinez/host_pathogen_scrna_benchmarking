@@ -1,0 +1,30 @@
+{
+    "timestamp": "2026-10-20T14:03:15.685628471-05:00",
+    "paths": [
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_PCA/fork0/chnk0-u46a4d7ba96/files/pca_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_PCA/fork0/chnk0-u46a4d7ba96/files/pca_h5.h5",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_PCA/fork0/join-u46a4d7ba95/files/pca_csv",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/RUN_PCA/fork0/join-u46a4d7ba95/files/pca_h5.h5"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-10-20T14:01:41.797394991-05:00",
+            "DeltaBytes": 5212
+        },
+        {
+            "Timestamp": "2026-10-20T14:01:42.051607301-05:00",
+            "DeltaBytes": 11881436
+        },
+        {
+            "Timestamp": "2026-10-20T14:01:43.158279018-05:00",
+            "DeltaBytes": -7134559
+        },
+        {
+            "Timestamp": "2026-10-20T14:03:15.685628471-05:00",
+            "DeltaBytes": -4735119
+        }
+    ],
+    "count": 16,
+    "size": 11869678
+}

@@ -1,0 +1,8 @@
+@include "rna/_cr_ana_stages.mro"
+
+call ASSIGN_LOW_UMI_CELLS(
+    analysis               = "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/SUMMARIZE_ANALYSIS/fork0/chnk0-u46a4d7baf3/files/analysis",
+    umi_upper_threshold    = null,
+    umi_lower_threshold    = null,
+    aggregate_and_annotate = null,
+)

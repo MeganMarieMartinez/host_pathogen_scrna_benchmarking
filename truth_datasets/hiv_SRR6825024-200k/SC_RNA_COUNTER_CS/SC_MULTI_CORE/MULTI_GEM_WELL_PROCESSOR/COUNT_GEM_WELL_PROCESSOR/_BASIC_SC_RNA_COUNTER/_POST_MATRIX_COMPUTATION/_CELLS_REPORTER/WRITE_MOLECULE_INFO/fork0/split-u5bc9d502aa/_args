@@ -1,0 +1,105 @@
+{
+    "barcode_index": "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/WRITE_BARCODE_INDEX/fork0/chnk0-u5bc9d50279/files/barcode_index.bi.bincode",
+    "cell_calling_config": {
+        "cell_barcodes": null,
+        "disable_ab_aggregate_detection": false,
+        "disable_high_occupancy_gem_detection": false,
+        "emptydrops_minimum_umis": {
+            "per_gem_well": null,
+            "per_sample": null
+        },
+        "force_cells": {
+            "per_gem_well": null,
+            "per_sample": null
+        },
+        "global_minimum_umis": {
+            "per_gem_well": null,
+            "per_sample": null
+        },
+        "max_mito_percent": {
+            "per_gem_well": null,
+            "per_sample": null
+        },
+        "override_library_types": null,
+        "override_mode": null,
+        "recovered_cells": {
+            "per_gem_well": null,
+            "per_sample": null
+        }
+    },
+    "chemistry_defs": {
+        "Gene Expression": {
+            "barcode": [
+                {
+                    "kind": "gel_bead",
+                    "length": 16,
+                    "offset": 0,
+                    "read_type": "R1",
+                    "whitelist": {
+                        "name": "737K-august-2016",
+                        "part": null,
+                        "slide": null,
+                        "strand": "+",
+                        "translation": false,
+                        "translation_whitelist_path": null
+                    }
+                }
+            ],
+            "barcode_extraction": null,
+            "description": "Single Cell 3' v2",
+            "endedness": "three_prime",
+            "name": "SC3Pv2",
+            "rna": {
+                "length": null,
+                "min_length": null,
+                "offset": 0,
+                "read_type": "R2"
+            },
+            "rna2": null,
+            "strandedness": "+",
+            "umi": [
+                {
+                    "length": 10,
+                    "min_length": null,
+                    "offset": 16,
+                    "read_type": "R1"
+                }
+            ]
+        }
+    },
+    "counts_bc_order": [
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/ALIGN_AND_COUNT/fork0/chnk0-u5bc9d50279/files/bc_umi_info.bui"
+    ],
+    "feature_reference_binary": "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/split-u5bc9d5026b/files/feature_reference.frf.bincode",
+    "filter_probes": null,
+    "filtered_barcodes": "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/join-u5bc9d502a0/files/filtered_barcodes.csv",
+    "include_introns": true,
+    "matrix_computer_summary": "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MERGE_METRICS/fork0/chnk0-u5bc9d502a0/files/summary.json",
+    "multi_config_sha": null,
+    "per_probe_metrics": null,
+    "per_sample_metrics": null,
+    "read_chunks": "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/MULTI_SETUP_CHUNKS/fork0/chnk0-u5bc9d5026a/files/chunks.json",
+    "reference_info": {
+        "genomes": [
+            "refdata-cellranger-hg38-pEGFP-N1-HIVpNL4-3_HIVonly-4.0.0"
+        ],
+        "transcriptome_info": {
+            "fasta_hash": "0ff13537df33737ea042550a9a2e4f0502722081",
+            "gtf_hash": "",
+            "gtf_hash_gz": "76ce0af4eca55a54c05eeb069b44bc52b19d5cd1",
+            "input_fasta_files": [
+                "combined_genome.fa"
+            ],
+            "input_gtf_files": [
+                "combined_genes.gtf"
+            ],
+            "mem_gb": 16.0,
+            "mkref_version": "cellranger-10.1.0",
+            "reference_path": "/home/mmartinez30/cell_ranger/refdata-cellranger-hg38-pEGFP-N1-HIVpNL4-3_HIVonly-4.0.0"
+        },
+        "version": null
+    },
+    "sample_barcodes": null,
+    "slide_serial_capture_area": null,
+    "target_panel_summary": null
+}

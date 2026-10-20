@@ -1,0 +1,4 @@
+2026-10-18 12:27:27 [time] __start__
+2026-10-18 12:27:28 [warn] No 10x cloud token defined. To enable cell annotation using the Automated Cell Annotation service on 10x Cloud via the 10x Cloud, please run `cellranger cloud auth setup`.
+2026-10-18 12:27:28 [warn] No 10x cloud token defined. To enable cell annotation via the 10x Cloud, please run `cellranger cloud auth setup`. Just running local cell annotation models.
+2026-10-18 12:27:28 [time] __end__

@@ -1,0 +1,23 @@
+{
+    "timestamp": "2026-10-18T12:34:22.070214539-05:00",
+    "paths": [
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/LIBRARY_CELL_ANNOTATION_SERVICE/ANNOTATE_CELLS/_ANNOTATE_CELLS/CREATE_META_CELLS/fork0/join-u5bc9d50314/files/filtered_metacell_matrix.h5"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-10-18T12:34:12.780212932-05:00",
+            "DeltaBytes": 5517
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:14.414279955-05:00",
+            "DeltaBytes": 681201
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:22.070214539-05:00",
+            "DeltaBytes": -675334
+        }
+    ],
+    "count": 1,
+    "size": 675334
+}

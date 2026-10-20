@@ -1,0 +1,19 @@
+{
+    "timestamp": "2026-10-20T14:01:33.843382082-05:00",
+    "paths": [
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/MULTI_SETUP_CHUNKS/fork0/chnk0-u46a4d7ba48/files/chunks.json"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-10-20T14:00:24.78696188-05:00",
+            "DeltaBytes": 7715
+        },
+        {
+            "Timestamp": "2026-10-20T14:01:33.843382082-05:00",
+            "DeltaBytes": -707
+        }
+    ],
+    "count": 1,
+    "size": 707
+}

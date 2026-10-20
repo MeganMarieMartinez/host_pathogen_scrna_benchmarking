@@ -1,0 +1,28 @@
+{
+    "timestamp": "2026-10-20T14:04:09.101377595-05:00",
+    "paths": [
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_REPORTER/CLOUPE_PREPROCESS/fork0/join-u46a4d7bb1a/files/gem_group_index_json.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_REPORTER/CLOUPE_PREPROCESS/fork0/join-u46a4d7bb1a/files/output_for_cloupe.cloupe"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-10-20T14:03:54.623278833-05:00",
+            "DeltaBytes": 6834
+        },
+        {
+            "Timestamp": "2026-10-20T14:03:56.489684726-05:00",
+            "DeltaBytes": 3106632
+        },
+        {
+            "Timestamp": "2026-10-20T14:04:08.641963123-05:00",
+            "DeltaBytes": -50
+        },
+        {
+            "Timestamp": "2026-10-20T14:04:09.101377595-05:00",
+            "DeltaBytes": -3094260
+        }
+    ],
+    "count": 2,
+    "size": 3094310
+}

@@ -1,0 +1,19 @@
+{
+    "timestamp": "2026-10-20T14:04:09.39785793-05:00",
+    "paths": [
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/FULL_COUNT_INPUTS/WRITE_GENE_INDEX/fork0/chnk0-u46a4d7b9e6/files/gene_index.json"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-10-20T13:58:46.490267887-05:00",
+            "DeltaBytes": 187836909
+        },
+        {
+            "Timestamp": "2026-10-20T14:04:09.39785793-05:00",
+            "DeltaBytes": -187831821
+        }
+    ],
+    "count": 1,
+    "size": 187831821
+}

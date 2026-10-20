@@ -1,0 +1,8 @@
+{
+    "cas_success": null,
+    "cell_type_results": null,
+    "cell_types_csv": "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/LIBRARY_CELL_ANNOTATION_SERVICE/ANNOTATE_CELLS/_ANNOTATE_CELLS/CALL_CELL_TYPES/CALL_AZIMUTH_CELL_TYPES/fork0/chnk0-u46a4d7bafa/files/cell_types_csv.csv",
+    "disable_cas_ws": null,
+    "disable_summarize": null,
+    "summary": "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/LIBRARY_CELL_ANNOTATION_SERVICE/ANNOTATE_CELLS/_ANNOTATE_CELLS/CALL_CELL_TYPES/CALL_AZIMUTH_CELL_TYPES/fork0/chnk0-u46a4d7bafa/files/summary.json"
+}

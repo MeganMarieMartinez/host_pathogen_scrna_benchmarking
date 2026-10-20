@@ -1,0 +1,23 @@
+@include "rna/cell_annotation_service.mro"
+
+map call CELL_ANNOTATION_SERVICE as ANNOTATE_CELLS(
+    filtered_matrix        = "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/join-u5bc9d502a0/files/filtered_matrices_h5.h5",
+    analysis               = "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/COUNT_ANALYZER/SC_RNA_ANALYZER/SUMMARIZE_ANALYSIS/fork0/chnk0-u5bc9d50313/files/analysis",
+    sample_id              = "SRR6825024-200k",
+    sample_desc            = "",
+    model_family           = split [
+        "Azimuth",
+        "10x_Cloud",
+    ],
+    tissue_positions       = null,
+    tissue_lowres_image    = null,
+    scale_factors          = null,
+    cell_annotation_model  = null,
+    tenx_cloud_token_path  = null,
+    pipestance_type        = "SC_MULTI_CORE_LIBRARY",
+    alert_string           = null,
+    is_pd                  = false,
+    aggregate_and_annotate = null,
+    metacell_to_cell_map   = null,
+    cloupe_projection      = null,
+)

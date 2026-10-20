@@ -1,0 +1,19 @@
+{
+    "chunks": [
+        {
+            "chunk_ind_start": 0,
+            "chunk_ind_end": 8192,
+            "__mem_gb": 4.6,
+            "__vmem_gb": 128
+        },
+        {
+            "chunk_ind_start": 8192,
+            "chunk_ind_end": 9366,
+            "__mem_gb": 4.6,
+            "__vmem_gb": 128
+        }
+    ],
+    "join": {
+        "__mem_gb": 1
+    }
+}

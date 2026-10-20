@@ -1,0 +1,45 @@
+@include "rna/_cr_lib_stages.mro"
+
+call COMPUTE_SUBSEQ_METRICS(
+    filtered_barcodes = "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_POST_MATRIX_COMPUTATION/FILTER_BARCODES/fork0/join-u5bc9d502a0/files/filtered_barcodes.csv",
+    chemistry_defs    = {
+        "Gene Expression": {
+            barcode: [
+                {
+                    kind:      "gel_bead",
+                    length:    16,
+                    offset:    0,
+                    read_type: "R1",
+                    whitelist: {
+                        name:                       "737K-august-2016",
+                        part:                       null,
+                        slide:                      null,
+                        strand:                     "+",
+                        translation:                false,
+                        translation_whitelist_path: null,
+                    },
+                },
+            ],
+            barcode_extraction: null,
+            description:        "Single Cell 3' v2",
+            endedness:          "three_prime",
+            name:               "SC3Pv2",
+            rna: {
+                length:     null,
+                min_length: null,
+                offset:     0,
+                read_type:  "R2",
+            },
+            rna2:               null,
+            strandedness:       "+",
+            umi: [
+                {
+                    length:     10,
+                    min_length: null,
+                    offset:     16,
+                    read_type:  "R1",
+                },
+            ],
+        },
+    },
+)

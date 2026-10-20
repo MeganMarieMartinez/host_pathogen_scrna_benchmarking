@@ -1,0 +1,28 @@
+{
+    "timestamp": "2026-10-18T12:34:04.340825043-05:00",
+    "paths": [
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/COLLATE_METRICS/fork0/chnk0-u5bc9d5029e/files/summary.json",
+        "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/COLLATE_METRICS/fork0/chnk0-u5bc9d5029e/files/per_barcode_metrics.csv"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2026-10-18T12:32:14.260724045-05:00",
+            "DeltaBytes": 1675249
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:15.714947454-05:00",
+            "DeltaBytes": 7623
+        },
+        {
+            "Timestamp": "2026-10-18T12:32:16.655363147-05:00",
+            "DeltaBytes": -5933
+        },
+        {
+            "Timestamp": "2026-10-18T12:34:04.340825043-05:00",
+            "DeltaBytes": -1655791
+        }
+    ],
+    "count": 2,
+    "size": 1661724
+}

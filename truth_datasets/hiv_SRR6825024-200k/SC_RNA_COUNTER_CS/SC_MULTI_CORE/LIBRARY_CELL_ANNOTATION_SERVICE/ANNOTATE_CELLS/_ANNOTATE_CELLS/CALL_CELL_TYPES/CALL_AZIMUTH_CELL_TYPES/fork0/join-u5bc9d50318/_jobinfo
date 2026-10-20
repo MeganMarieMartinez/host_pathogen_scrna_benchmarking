@@ -1,0 +1,155 @@
+{
+    "name": "ID.SRR6825024-200k.SC_RNA_COUNTER_CS.SC_MULTI_CORE.LIBRARY_CELL_ANNOTATION_SERVICE.ANNOTATE_CELLS._ANNOTATE_CELLS.CALL_CELL_TYPES.CALL_AZIMUTH_CELL_TYPES.fork0",
+    "type": "local",
+    "cwd": "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/LIBRARY_CELL_ANNOTATION_SERVICE/ANNOTATE_CELLS/_ANNOTATE_CELLS/CALL_CELL_TYPES/CALL_AZIMUTH_CELL_TYPES/fork0/join-u5bc9d50318/files",
+    "python": {
+        "binpath": "/home/mmartinez30/cell_ranger/cellranger-10.1.0/external/anaconda/bin/python3",
+        "version": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]"
+    },
+    "rusage": {
+        "self": {
+            "ru_maxrss": 46720,
+            "ru_ixrss": 0,
+            "ru_idrss": 0,
+            "ru_minflt": 586,
+            "ru_majflt": 0,
+            "ru_nswap": 0,
+            "ru_utime": 0.001094,
+            "ru_stime": 0.008639,
+            "ru_inblock": 0,
+            "ru_oublock": 40,
+            "ru_msgsnd": 0,
+            "ru_msgrcv": 0,
+            "ru_nsignals": 0,
+            "ru_nivcsw": 0
+        },
+        "children": {
+            "ru_maxrss": 239992,
+            "ru_ixrss": 0,
+            "ru_idrss": 0,
+            "ru_minflt": 41495,
+            "ru_majflt": 0,
+            "ru_nswap": 0,
+            "ru_utime": 2.03705,
+            "ru_stime": 0.314291,
+            "ru_inblock": 0,
+            "ru_oublock": 32,
+            "ru_msgsnd": 0,
+            "ru_msgrcv": 0,
+            "ru_nsignals": 0,
+            "ru_nivcsw": 46
+        }
+    },
+    "used_bytes": {
+        "rss": 103190528,
+        "shared": 51736576,
+        "vmem": 1882705920,
+        "text": 3874816,
+        "stack": 127238144,
+        "proc_count": 1
+    },
+    "io": {
+        "total": {
+            "read": {
+                "sysc": 1549,
+                "bytes": 8192
+            },
+            "write": {
+                "sysc": 16,
+                "bytes": 0
+            }
+        },
+        "max": {
+            "read": {
+                "sysc": 3074.7259147871537,
+                "bytes": 16324.144325299003
+            },
+            "write": {
+                "sysc": 31.883094385349615,
+                "bytes": 0
+            }
+        },
+        "dev": {
+            "read": {
+                "sysc": 48.359199202511505,
+                "bytes": 1149.3461775333894
+            },
+            "write": {
+                "sysc": 2.2448167529949012,
+                "bytes": 0
+            }
+        }
+    },
+    "wallclock": {
+        "start": "2026-10-18T12:34:19.650522195-05:00",
+        "end": "2026-10-18T12:34:22.005514772-05:00",
+        "duration_seconds": 2.354992574
+    },
+    "profile_mode": "disable",
+    "stackvars_flag": "disable",
+    "monitor_flag": "disable",
+    "invocation": {
+        "call": "SC_RNA_COUNTER_CS",
+        "args": {
+            "aligner": null,
+            "cell_annotation_model": null,
+            "check_library_compatibility": true,
+            "chemistry": "auto",
+            "disable_ab_aggregate_detection": false,
+            "emptydrops_minimum_umis": null,
+            "enable_tsne": false,
+            "feature_reference": null,
+            "filter_probes": null,
+            "force_cells": null,
+            "global_minimum_umis": null,
+            "include_introns": true,
+            "max_mito_percent": null,
+            "min_crispr_umi_threshold": 3,
+            "minimap_preset": null,
+            "no_bam": true,
+            "no_secondary_analysis": false,
+            "r1_length": null,
+            "r2_length": null,
+            "recovered_cells": null,
+            "reference_path": "/home/mmartinez30/cell_ranger/refdata-cellranger-hg38-pEGFP-N1-HIVpNL4-3_HIVonly-4.0.0",
+            "sample_def": [
+                {
+                    "fastq_id": null,
+                    "fastq_mode": "ILMN_BCL2FASTQ",
+                    "gem_group": null,
+                    "lanes": null,
+                    "library_type": "Gene Expression",
+                    "r1_length": null,
+                    "r2_length": null,
+                    "read_path": "/home/mmartinez30/host_pathogen_scrna_benchmarking/data/raw",
+                    "sample_indices": [
+                        "any"
+                    ],
+                    "sample_names": [
+                        "SRR6825024-200k"
+                    ],
+                    "subsample_rate": null
+                }
+            ],
+            "sample_desc": "",
+            "sample_id": "SRR6825024-200k",
+            "skip_cell_annotation": false,
+            "target_set": null,
+            "target_set_name": null,
+            "targeting_method": null,
+            "tenx_cloud_token_path": null,
+            "trim_polya_min_score": 20,
+            "trim_tso_min_score": 20
+        },
+        "mro_file": "rna/sc_rna_counter_cs.mro"
+    },
+    "version": {
+        "martian": "v4.0.15",
+        "pipelines": "10.1.0"
+    },
+    "host": "bioi",
+    "pid": 2844651,
+    "threads": 1,
+    "memGB": 1,
+    "vmemGB": 4
+}

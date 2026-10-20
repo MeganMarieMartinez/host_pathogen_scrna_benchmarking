@@ -1,0 +1,4 @@
+{
+    "cas_diffexp_csv": "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/LIBRARY_CELL_ANNOTATION_SERVICE/ANNOTATE_CELLS/_ANNOTATE_CELLS/SUMMARIZE_CELL_TYPES/CELL_TYPE_DIFF_EXP/TIDY_CELLTYPE_DIFFEXP/fork0/chnk0-u46a4d7bb10/files/cas_diffexp_csv.csv",
+    "diffexp": "/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/LIBRARY_CELL_ANNOTATION_SERVICE/ANNOTATE_CELLS/_ANNOTATE_CELLS/SUMMARIZE_CELL_TYPES/CELL_TYPE_DIFF_EXP/TIDY_CELLTYPE_DIFFEXP/fork0/chnk0-u46a4d7bb10/files/diffexp.json"
+}

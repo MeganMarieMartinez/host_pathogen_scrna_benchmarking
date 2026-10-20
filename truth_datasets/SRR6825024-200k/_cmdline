@@ -1,0 +1,1 @@
+cellranger count --id SRR6825024-200k --transcriptome /home/skyemegan/refdata-gex-GRCh38-2024-A --fastqs ../data/raw --sample SRR6825024-200k --localcores 5 --localmem 32 --create-bam false

@@ -1,0 +1,23 @@
+{
+  "chunks": [
+    {
+      "__mem_gb": 19.0,
+      "__threads": 4,
+      "__vmem_gb": 25.0,
+      "range": {
+        "end": null,
+        "start": {
+          "content": {
+            "Sequence": "AAAAAAAAAGAAAACA"
+          },
+          "gem_group": 1,
+          "valid": false
+        }
+      },
+      "read_ann_subsample_rate": 1.0
+    }
+  ],
+  "join": {
+    "__mem_gb": 1.0
+  }
+}

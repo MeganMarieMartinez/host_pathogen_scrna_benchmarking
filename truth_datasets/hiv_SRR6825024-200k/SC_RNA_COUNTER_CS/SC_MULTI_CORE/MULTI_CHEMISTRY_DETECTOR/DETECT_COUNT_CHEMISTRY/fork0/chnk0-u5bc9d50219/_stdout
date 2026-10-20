@@ -1,0 +1,48 @@
+[stdout]
+Number of fastq units = 1
+Sampling reads from: Sample SRR6825024-200k in "/home/mmartinez30/host_pathogen_scrna_benchmarking/data/raw"
+Sample SRR6825024-200k in "/home/mmartinez30/host_pathogen_scrna_benchmarking/data/raw" is a paired-end library!
+
+Detecting chemistry for Gene Expression
+Potential chemistries: SC5P-R2, SC5P-PE, SC5P-R2-v3, SC5P-PE-v3, SC3Pv1, SC3Pv2, SC3Pv3-polyA, SC3Pv3-CS1, SC3Pv3HT-polyA, SC3Pv3HT-CS1, SC3Pv4-polyA, SC3Pv4-CS1, ARC-v1
+
+Length based filtering for Sample SRR6825024-200k in "/home/mmartinez30/host_pathogen_scrna_benchmarking/data/raw"
+LengthStats {
+    median: {
+        R1: 26,
+        I1: 0,
+        R2: 98,
+    },
+}
+Compatible chemistries: SC5P-R2, SC5P-R2-v3, SC3Pv2, SC3Pv3-polyA, SC3Pv3-CS1, SC3Pv3HT-polyA, SC3Pv3HT-CS1, SC3Pv4-polyA, SC3Pv4-CS1, ARC-v1
+Result: SC5P-R2, SC5P-R2-v3, SC3Pv2, SC3Pv3-polyA, SC3Pv3-CS1, SC3Pv3HT-polyA, SC3Pv3HT-CS1, SC3Pv4-polyA, SC3Pv4-CS1, ARC-v1
+Candidates after length filter: SC5P-R2, SC5P-R2-v3, SC3Pv2, SC3Pv3-polyA, SC3Pv3-CS1, SC3Pv3HT-polyA, SC3Pv3HT-CS1, SC3Pv4-polyA, SC3Pv4-CS1, ARC-v1
+
+Whitelist based filtering for Sample SRR6825024-200k in "/home/mmartinez30/host_pathogen_scrna_benchmarking/data/raw"
+SC3Pv3-CS1: 0.03548
+ARC-v1: 0.0009
+SC3Pv4-polyA: 0.00398
+SC3Pv3-polyA: 0.07648
+SC3Pv4-CS1: 0.00427
+SC3Pv3HT-CS1: 0.03548
+SC3Pv2: 0.9597
+SC3Pv3HT-polyA: 0.07648
+SC5P-R2-v3: 0.00192
+SC5P-R2: 0.9597
+Compatible chemistries: SC5P-R2, SC3Pv2
+Result: SC5P-R2, SC3Pv2
+After whitelist filter: SC5P-R2, SC3Pv2
+
+Mapping based filtering for Sample SRR6825024-200k in "/home/mmartinez30/host_pathogen_scrna_benchmarking/data/raw"
+MappingStats {
+    total_reads: 100000,
+    sense_reads: 53843,
+    antisense_reads: 1139,
+    conf_mapped_reads: 80574,
+}
+Compatible chemistries: SC3Pv2
+Result: SC3Pv2
+After mapping filter: SC3Pv2
+
+Detected SC3Pv2 for Gene Expression
+Warning: problem fetching io for 2841616: permission denied; final statistics may be incomplete
