@@ -8,6 +8,8 @@ log=$(mktemp)
 /usr/bin/time -v -o "$log" "$@"
 elapsed=$(grep 'Elapsed (wall clock)' "$log" | awk '{print $NF}')
 maxrss=$(grep 'Maximum resident set size' "$log" | awk '{print $NF}')
-mkdir -p results
-[ -f results/timing.tsv ] || printf 'tool\tdataset\telapsed\tmax_rss_kb\n' > results/timing.tsv
-printf '%s\t%s\t%s\t%s\n' "$tool" "$dataset" "$elapsed" "$maxrss" >> results/timing.tsv
+
+RESULTS_DIR=${RESULTS_DIR:-$HOME/host_pathogen_scrna_benchmarking/results}
+mkdir -p "$RESULTS_DIR"
+[ -f "$RESULTS_DIR/timing.tsv" ] || printf 'tool\tdataset\telapsed\tmax_rss_kb\n' > "$RESULTS_DIR/timing.tsv"
+printf '%s\t%s\t%s\t%s\n' "$tool" "$dataset" "$elapsed" "$maxrss" >> "$RESULTS_DIR/timing.tsv"

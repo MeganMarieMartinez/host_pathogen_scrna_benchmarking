@@ -1,7 +1,7 @@
 set -eu
  
 cd ~/DVsc
-HG=/home/skyemegan/fasta/genome.fa
+HG=/home/skyemegan/ref_genomes_w_pathogen/refdata-cellranger-hg38-pEGFP-N1-HIVpNL4-3_HIVonly-4.0.0/fasta/genome.fa
 HIV_CONTIG='HIV-1_pNL4-3'
  
 cp anno.txt anno_hiv.txt  # re-copies each run, so the HIV row is only added once

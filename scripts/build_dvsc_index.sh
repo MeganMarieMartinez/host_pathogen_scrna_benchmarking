@@ -1,17 +1,17 @@
 set -eu
  
 REFDIR=/home/skyemegan/ref_dvsc
-HG=/home/skyemegan/fasta/genome.fa
+HG=/home/skyemegan/ref_genomes_w_pathogen/refdata-cellranger-hg38-pEGFP-N1-HIVpNL4-3_HIVonly-4.0.0/fasta/genome.fa
 HIV_CONTIG='HIV-1_pNL4-3'
 THREADS=8
-FQ="$HOME/HIV_inf1_R2_extracted.fastq.gz"   # output from preprocess_umi_tools.sh
+FQ="$HOME/dvsc_work/preproc/HIV_inf1_R2_extracted.fastq.gz"   # output from preprocess_umi_tools.sh
  
 mkdir -p "$REFDIR"
 cd "$REFDIR"
  
 #load conda shell hook
 source "$(conda info --base)/etc/profile.d/conda.sh"
-conda activate DVsc
+conda activate dvsc
 
 #### Split FASTA file into Human only + HIV ####
 grep 'HIV' $HG.fai # shows contig name + length
