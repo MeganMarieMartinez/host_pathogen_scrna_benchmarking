@@ -1,10 +1,10 @@
 set -eu
  
-cd ~/DVsc
+cd ~/dvsc_work
 HG=/home/skyemegan/ref_genomes_w_pathogen/refdata-cellranger-hg38-pEGFP-N1-HIVpNL4-3_HIVonly-4.0.0/fasta/genome.fa
 HIV_CONTIG='HIV-1_pNL4-3'
  
-cp anno.txt anno_hiv.txt  # re-copies each run, so the HIV row is only added once
+cp ~/DVsc/anno.txt anno_hiv.txt  # re-copies each run, so the HIV row is only added once
 grep -n -i -E "immunodeficiency|NC_001802" anno_hiv.txt || echo "No existing HIV rows in anno.txt"
  
 # make sure the file ends in a newline so the new row isn't added onto the last one

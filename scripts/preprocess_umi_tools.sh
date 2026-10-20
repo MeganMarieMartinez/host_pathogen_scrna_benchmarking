@@ -1,5 +1,8 @@
 set -eu
  
+source "$(conda info --base)/etc/profile.d/conda.sh"
+conda activate umitools
+
 SHARED=/home/skyemegan
 OUT=$HOME/dvsc_work/preproc
 PATTERN=CCCCCCCCCCCCCCCCNNNNNNNNNN
