@@ -1,4 +1,0 @@
-2026-10-20 14:04:08 [time] __start__
-2026-10-20 14:04:08 [info] Running appendtracks: appendtracks /home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/LIBRARY_CELL_ANNOTATION_SERVICE/STRUCTIFY_CELL_ANNOTATION_OUTS/fork0/chnk0-u46a4d7bb12/files/Azimuth_cloupe_cas_types.json /home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_REPORTER/APPEND_CELL_TYPES_CLOUPE/fork0/chnk0-u46a4d7bb28/files/temp.cloupe /home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_REPORTER/APPEND_CELL_TYPES_CLOUPE/fork0/chnk0-u46a4d7bb28/files/cell_annotation_sample_cloupe.cloupe --trackName Azimuth Cell Types (beta) --emptyName=Unknown --multiName=Multiple Labels
-2026-10-20 14:04:09 [info] appendtracks output: b''
-2026-10-20 14:04:09 [time] __end__

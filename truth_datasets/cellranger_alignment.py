@@ -69,7 +69,7 @@ for sample_name in samples:
     '''
 
     # running cell ranger
-    cellranger_command = f'cellranger count --id {sample_name} --transcriptome {genome_directory} --fastqs {infile} --sample {sample_name} --localcores {LOCAL_CORES} --localmem {LOCAL_MEM} --create-bam false'
+    cellranger_command = f'cellranger count --id {sample_name} --transcriptome {genome_directory} --fastqs {infile} --sample {sample_name} --localcores {LOCAL_CORES} --localmem {LOCAL_MEM} --create-bam true'
     print(cellranger_command)
     
 
