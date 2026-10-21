@@ -13,16 +13,11 @@ def check_arg(args=None):
     parser.add_argument('-g', '--genome_directory',
             help = 'path cell ranger reference genome',
             required = 'True')
-    parser.add_argument('-o', '--output',
-        help='output directory path',
-        required='True'
-        )
     return parser.parse_args(args)
 
 #retrieve command line arguments and assign to variables
 args = check_arg(sys.argv[1:])
 infile = args.input
-outfile = args.output
 genome_directory = args.genome_directory
 
 # Cell Ranger resources
@@ -61,12 +56,6 @@ for sample_name in samples:
     print(f"Sample {counter} of {len(samples)}")
     print("----------------------------------------")
 
-    # expected Cell Ranger FASTQ files 
-    # hard coding the fastq read count for now, will find a better way to do this later -> only need below if I am doing error checking
-    '''
-    R1=f"{infile}/{sample_name}_200k_1.fastq"
-    R2=f"{infile}/{sample_name}_200k_2.fastq"
-    '''
 
     # running cell ranger
     cellranger_command = f'cellranger count --id {sample_name} --transcriptome {genome_directory} --fastqs {infile} --sample {sample_name} --localcores {LOCAL_CORES} --localmem {LOCAL_MEM} --create-bam true'
@@ -77,8 +66,6 @@ for sample_name in samples:
     result = subprocess.run(cellranger_command, shell = True)
     end_time = end_time = time.perf_counter()
     elapsed_time = end_time - start_time
-    print(result.stdout)
-    print(result.stderr)
     print(f"Elapsed time: {elapsed_time:.6f} seconds")
 
     status = result.returncode
