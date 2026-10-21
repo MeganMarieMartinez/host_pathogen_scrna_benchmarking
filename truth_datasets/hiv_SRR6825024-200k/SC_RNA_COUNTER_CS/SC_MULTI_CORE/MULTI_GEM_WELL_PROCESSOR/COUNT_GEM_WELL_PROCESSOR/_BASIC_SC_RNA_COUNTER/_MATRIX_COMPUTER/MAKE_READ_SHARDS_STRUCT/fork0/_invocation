@@ -1,7 +1,0 @@
-@include "rna/_slfe_matrix_computer.mro"
-
-call MAKE_READ_SHARDS_STRUCT(
-    valid_reads     = ["/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/MAKE_SHARD/fork0/chnk0-u5bc9d50275/files/valid.shard"],
-    corrected_reads = ["/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/BARCODE_CORRECTION/fork0/chnk0-u5bc9d50278/files/valid_shard.shard"],
-    invalid_reads   = ["/home/mmartinez30/host_pathogen_scrna_benchmarking/truth_datasets/SRR6825024-200k/SC_RNA_COUNTER_CS/SC_MULTI_CORE/MULTI_GEM_WELL_PROCESSOR/COUNT_GEM_WELL_PROCESSOR/_BASIC_SC_RNA_COUNTER/_MATRIX_COMPUTER/BARCODE_CORRECTION/fork0/chnk0-u5bc9d50278/files/invalid_shard.shard"],
-)

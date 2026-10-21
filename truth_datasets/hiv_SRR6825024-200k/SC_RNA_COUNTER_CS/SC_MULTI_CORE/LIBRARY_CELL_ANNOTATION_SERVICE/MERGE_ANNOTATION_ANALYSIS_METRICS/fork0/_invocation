@@ -1,9 +1,0 @@
-@include "rna/_cr_lib_stages.mro"
-
-call MERGE_METRICS_MAPS as MERGE_ANNOTATION_ANALYSIS_METRICS(
-    top_level_name = "cell_annotation_analysis_metrics",
-    summaries      = {
-        "10x_Cloud": null,
-        "Azimuth": null,
-    },
-)

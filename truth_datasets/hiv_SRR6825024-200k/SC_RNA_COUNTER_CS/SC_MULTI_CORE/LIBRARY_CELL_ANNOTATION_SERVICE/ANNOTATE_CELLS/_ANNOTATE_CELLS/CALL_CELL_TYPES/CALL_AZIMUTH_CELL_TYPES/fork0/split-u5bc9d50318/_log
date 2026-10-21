@@ -1,3 +1,0 @@
-2026-10-18 12:34:16 [time] __start__
-2026-10-18 12:34:19 [info] Exiting because genome: ['refdata-cellranger-hg38-pEGFP-N1-HIVpNL4-3_HIVonly-4.0.0'], library types: {'Gene Expression'} and is_human: False
-2026-10-18 12:34:19 [time] __end__

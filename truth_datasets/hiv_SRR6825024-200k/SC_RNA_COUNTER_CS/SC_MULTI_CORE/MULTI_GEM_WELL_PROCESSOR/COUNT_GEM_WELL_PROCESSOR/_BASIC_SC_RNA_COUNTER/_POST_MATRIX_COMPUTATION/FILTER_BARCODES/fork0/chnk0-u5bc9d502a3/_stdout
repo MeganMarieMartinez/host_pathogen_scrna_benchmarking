@@ -1,5 +1,0 @@
-[stdout]
-Found recovered_cells = 8230 with loss = 0.014574189755643927
-Range empty barcodes: 45000 - 90000
-Max background UMIs: 0
-Failed at attempt to call non-ambient barcodes in GEM well 1
