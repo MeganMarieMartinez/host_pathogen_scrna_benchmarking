@@ -40,5 +40,6 @@ scpathoquant -10x path/to/cellranger_output/ -op path/for/results/directory -p 8
 scpathoquant -10x ./processed/SRR6825024-200k/ -op ./scpathoquant_outputs -p 8 -p2genome path/to/pathogen_reference_genome/
 ```
 
-## Output - in progress
-Outputs are in ~/data/scpathoquant_outputs folds 
+## Output 
+Limited output can be found in ```~/data/processed/scpathoquant_outputs```.
+Complete output is too large to push to repo.
