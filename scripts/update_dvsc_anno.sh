@@ -2,7 +2,8 @@ set -eu
  
 cd ~/dvsc_work
 HG=/home/skyemegan/ref_genomes_w_pathogen/refdata-cellranger-hg38-pEGFP-N1-HIVpNL4-3_HIVonly-4.0.0/fasta/genome.fa
-HIV_CONTIG='HIV-1_pNL4-3'
+HIV_CONTIG='HIV-1_pNL4-3' # contig name in the Cell Ranger FASTA
+DVSC_ID='NC_pNL43' # must match build_dvsc_index.sh
  
 cp ~/DVsc/anno.txt anno_hiv.txt  # re-copies each run, so the HIV row is only added once
 grep -n -i -E "immunodeficiency|NC_001802" anno_hiv.txt || echo "No existing HIV rows in anno.txt"
@@ -19,6 +20,6 @@ if [ -z "$LEN" ]; then
 fi
 echo "length = $LEN"
  
-printf '%s\t%s\tHuman immunodeficiency virus 1\tcomplete genome\trefseq\n' "$HIV_CONTIG" "$LEN" >> anno_hiv.txt
+printf '%s\t%s\tHuman immunodeficiency virus 1\tcomplete genome\trefseq\n' "$DVSC_ID" "$LEN" >> anno_hiv.txt
 tail -2 anno_hiv.txt | cat -A | cut -c1-120 
  
