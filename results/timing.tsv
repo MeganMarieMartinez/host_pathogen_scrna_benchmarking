@@ -1,4 +1,4 @@
 tool	dataset	elapsed	max_rss_kb
 DVsc	HIV_inf1_5M	5:46.16	4501760
 DVsc	HIV_uninf1_5M	4:40.54	4503680
-SPQ	HIV_inf1_5M	0:41.47	3980432
+SPQ-bbmap	HIV_inf1_5M	0:41.47	3980432
