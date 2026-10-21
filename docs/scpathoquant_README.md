@@ -33,11 +33,11 @@ ScPathoQuant required ```cellranger count``` output as input. Please refer to ce
 ```
 scpathoquant -10x path/to/cellranger_output/ -op path/for/results/directory -p 8 -p2genome path/to/pathogen_reference_genome/ 
 ```
-### Example Run - HIV Infected 1- 200k Reads Subset Aligned to Human Reference Genome
+### Example Run: HIV Infected 1- 200k Reads Subset Aligned to Human Reference Genome
 ```
 # run this in the ~/data directory
 # run with default setting (bbmap as aligner)
-scpathoquant -10x ./processed/SRR6825024-200k/ -op ./scpathoquant_outputs -p 8 -p2genome path/to/pathogen_refernce_genome/
+scpathoquant -10x ./processed/SRR6825024-200k/ -op ./scpathoquant_outputs -p 8 -p2genome path/to/pathogen_reference_genome/
 ```
 
 ## Output - in progress
