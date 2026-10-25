@@ -33,10 +33,6 @@ for file in file_names:
     sample_name = file.split('_')[0]
     samples.add(sample_name)
 
-# making output directory and moving into it
-subprocess.run(f'mkdir -p {outfile}', shell = True)
-subprocess.run(f'cd {outfile}', shell = True)
-
 print("========================================")
 print("Cell Ranger processing")
 print("========================================")

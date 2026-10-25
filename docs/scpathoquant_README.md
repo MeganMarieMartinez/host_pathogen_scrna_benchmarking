@@ -37,6 +37,7 @@ scpathoquant -10x path/to/cellranger_output/ -op path/for/results/directory -p 8
 ```
 # run this in the ~/data directory
 # run with default setting (bbmap as aligner)
+# this assumes cellranger count output is a directory within the processed directory -> subset data was too big to push to github
 scpathoquant -10x ./processed/SRR6825024-200k/ -op ./scpathoquant_outputs -p 8 -p2genome path/to/pathogen_reference_genome/
 ```
 

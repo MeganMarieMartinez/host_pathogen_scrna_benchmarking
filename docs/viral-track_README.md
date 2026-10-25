@@ -1,5 +1,5 @@
 # Viral-Track Installation and Usage
-**Current Progress**: Viral-Track is installed but not running, as pre-processing steos are still in progress.
+**Current Progress**: Viral-Track is installed but not running, as pre-processing steps are still in progress.
 
 ## Dependencies
 * Spliced Transcript Alignment to A Reference (STAR) (http://github.com/alexdobin/STAR)
