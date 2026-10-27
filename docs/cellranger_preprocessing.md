@@ -25,3 +25,8 @@ To create cellranger output, run the cellranger_alignment.py file in the ./scrip
 # assuming we are running within cellranger_setup directory
 python cellranger_alignment.py -i path/to/fastq/files -g ./refdata-gex-GRCh38-2020-A
 ```
+# Truth Dataset - Cell Ranger Count
+Path to reference genome (human + HIV with integrated EGFP)
+```
+/home/skyemegan/ref_genomes_w_pathogen/refdata-cellranger-hg38-pEGFP-N1-HIVpNL4-3_HIVonly-4.0.0
+```
