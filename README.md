@@ -43,6 +43,8 @@ cd host_pathogen_scrna_benchmarking
 conda env create -f envs/pathogentrack.yml
 conda env create -f envs/dvsc.yml
 conda env create -f envs/umitools.yml
+conda env create -f envs/scpathoquant.yml
+conda env create -f envs/viral-track.yml
 conda env list
 ```
 
@@ -74,6 +76,25 @@ PathogenTrack calls `umi_tools`, which is in its own environment. Add it to your
 ```bash
 export PATH=$HOME/miniconda3/envs/umitools/bin:$PATH
 ```
+## ScPathoQuant
+Source: https://github.com/galelab/scPathoQuant.git
+
+For an in-depth installation guide (including required pre-processing tools), see `docs/scpathoquant_README.md`
+
+```bash
+conda activate scpathoquant
+```
+
+## Viral-Track
+Source: https://github.com/PierreBSC/Viral-Track
+
+For an in-depth installation guide (including required pre-processing tools), see `docs/viral-track_README.md`
+
+```bash
+conda activate viral-track
+```
+
+
 # References
 
 1. Whitmore LS, Tisoncik-Go J, Gale M Jr. scPathoQuant: a tool for efficient alignment and quantification of pathogen sequence reads from 10× single cell sequencing datasets. Bioinformatics. 2024 Apr 1;40(4):btae145. doi:10.1093/bioinformatics/btae145 
