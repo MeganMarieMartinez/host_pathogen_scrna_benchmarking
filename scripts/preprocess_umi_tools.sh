@@ -9,13 +9,11 @@ PATTERN=CCCCCCCCCCCCCCCCNNNNNNNNNN
 mkdir -p "$OUT" && cd "$OUT"
 
 SIZE=25M
-R1=$dir/${srr}_${SIZE}_1.fastq
-R2=$dir/${srr}_${SIZE}_2.fastq
 
 run_sample() {   # run_sample <label> <folder in $SHARED> <SRR id>
   label=$1; dir=$SHARED/$2; srr=$3
-  R1=$dir/${srr}_5M_1.fastq
-  R2=$dir/${srr}_5M_2.fastq
+  R1=$dir/${srr}_${SIZE}_1.fastq
+  R2=$dir/${srr}_${SIZE}_2.fastq
  
   if [ -s "${label}_R2_extracted.fastq.gz" ]; then
     echo "Skipping $label: ${label}_R2_extracted.fastq.gz already exists"
