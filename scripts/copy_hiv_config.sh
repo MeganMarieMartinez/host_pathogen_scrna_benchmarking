@@ -1,5 +1,5 @@
 cd ~/dvsc_work
-ls -lh $HOME/dvsc_work/preproc/HIV_inf1_R2_extracted.fastq.gz
+ls -lh $HOME/dvsc_work/preproc/HIV_inf1_25M_R2_extracted.fastq.gz
 
 cat > hiv_inf1.config << 'EOF'
 {
@@ -15,12 +15,12 @@ cat > hiv_inf1.config << 'EOF'
     "star":{"call":"STAR","threads":4},
     "samtools":{"call":"samtools","threads":4}
   },
-  "fastq":"/home/slarosa/dvsc_work/preproc/HIV_inf1_R2_extracted.fastq.gz",
-  "whitelist":"/home/slarosa/dvsc_work/preproc/HIV_inf1_whitelist.txt",
-  "sample":"HIV_inf1_5M",
+  "fastq":"/home/slarosa/dvsc_work/preproc/HIV_inf1_25M_R2_extracted.fastq.gz",
+  "whitelist":"/home/slarosa/dvsc_work/preproc/HIV_inf1_25M_whitelist.txt",
+  "sample":"HIV_inf1_25M",
   "method":"scRNAseq",
   "readlength":98,
-  "outpath":"/home/slarosa/dvsc_work/HIV_inf1_5M_output",
+  "outpath":"/home/slarosa/dvsc_work/HIV_inf1_25M_output",
   "alignment":"hisat2"
 }
 EOF
