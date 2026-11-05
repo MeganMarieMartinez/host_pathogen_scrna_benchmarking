@@ -7,7 +7,11 @@ SHARED=/home/skyemegan
 OUT=$HOME/dvsc_work/preproc
 PATTERN=CCCCCCCCCCCCCCCCNNNNNNNNNN
 mkdir -p "$OUT" && cd "$OUT"
- 
+
+SIZE=25M
+R1=$dir/${srr}_${SIZE}_1.fastq
+R2=$dir/${srr}_${SIZE}_2.fastq
+
 run_sample() {   # run_sample <label> <folder in $SHARED> <SRR id>
   label=$1; dir=$SHARED/$2; srr=$3
   R1=$dir/${srr}_5M_1.fastq
@@ -27,5 +31,5 @@ run_sample() {   # run_sample <label> <folder in $SHARED> <SRR id>
     --filter-cell-barcode --whitelist="${label}_whitelist.txt" --log2stderr
 }
  
-run_sample HIV_inf1   HIV_Infected_1_SRR6825024   SRR6825024
-run_sample HIV_uninf1 HIV_uninfected_1_SRR6825026 SRR6825026
+run_sample HIV_inf1_${SIZE}   HIV_Infected_1_SRR6825024   SRR6825024
+run_sample HIV_uninf1_${SIZE} HIV_Uninfected_1_SRR6825026 SRR6825026
