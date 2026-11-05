@@ -6,9 +6,8 @@ conda activate umitools
 SHARED=/home/skyemegan
 OUT=$HOME/dvsc_work/preproc
 PATTERN=CCCCCCCCCCCCCCCCNNNNNNNNNN
-mkdir -p "$OUT" && cd "$OUT"
-
 SIZE=25M
+mkdir -p "$OUT" && cd "$OUT"
 
 log() { echo "[$(date '+%F %T')] $*"; }
 SECONDS=0
