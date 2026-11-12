@@ -81,15 +81,22 @@ make_slice() {   # make_slice <SRR id> <folder name under $SHARED>
   log "Free space here: $(df -h . | tail -n 1 | awk '{print $4}')"
  
   # ---- Step 1: get the .sra file (resumes / skips if already complete) ----
-  log "prefetch $srr (re-run this script to resume if it is interrupted)"
-  prefetch --max-size 500G "$srr" || die "prefetch $srr failed"
-  SRA=$(srapath "$srr")
+  log "prefetch $srr into $dir (re-run this script to resume if it is interrupted)"
+  prefetch --max-size 500G -O "$dir" "$srr" || die "prefetch $srr failed"
+  # prefetch -O <dir> normally writes <dir>/<srr>/<srr>.sra. Look there first, then
+  # anywhere under <dir>, then ask srapath, so a different layout is found right away
+  # instead of after hours of work.
+  SRA=$dir/$srr/$srr.sra
+  if [ ! -s "$SRA" ]; then
+    SRA=$(find "$dir" -maxdepth 2 -name "$srr.sra" -size +0 -print -quit)
+    [ -n "$SRA" ] || SRA=$(srapath "$srr")
+  fi
   case $SRA in
     /*) ;;
-    *) die "srapath returned '$SRA', not a local file, so prefetch did not complete" ;;
+    *) die "could not find the downloaded $srr.sra (srapath returned '$SRA'); prefetch may not have completed" ;;
   esac
   [ -s "$SRA" ] || die "local file $SRA is missing or empty"
-  log "Local SRA file: $SRA"
+  log "Local SRA file: $SRA ($(du -h "$SRA" | cut -f1))"
  
   TOTAL=$(total_spots "$srr" "$SRA") || die "cannot determine the number of spots for $srr"
   [ "$N" -lt "$TOTAL" ] || die "$srr has only $TOTAL spots, which is fewer than the N=$N requested"
