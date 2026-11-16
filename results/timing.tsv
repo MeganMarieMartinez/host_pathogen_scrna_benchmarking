@@ -1,0 +1,2 @@
+tool	dataset	elapsed	max_rss_kb	stage	rep	threads	elapsed_s	user_s	sys_s	exit_status	load1_start	start_time
+DVsc	HIV_inf1_25M	16:44.76	461752	umi_whitelist	1	1	1004.76	1001.26	7.60	0	4.81	2026-11-16 14:25:56
