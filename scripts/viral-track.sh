@@ -57,4 +57,6 @@ Rscript edited_Viral_Track_scanning.R ./Viral-Trackfiles/$parameter_file ./Viral
 
 wait
 
-Rscript 
+Rscript edited_VT_demux.R ./Viral-Trackfiles/$parameter_file ./Viral-Trackfiles/$target_file
+
+wait
