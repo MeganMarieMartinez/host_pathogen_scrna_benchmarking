@@ -35,23 +35,16 @@ umi_tools extract --bc-pattern=CCCCCCCCCCCCCCCCNNNNNNNNNN \
                   --read2-out="$out_r2" \
                   --whitelist "${sample}_whitelist.txt"
 
-mkdir ../human_ref_genome/viraltrack_star_index
+# STAR was already run, so to save time I will not include it in this script, but write it into another script for future use.
 
-# running STAR
-STAR --runThreadN 4 \
---runMode genomeGenerate \
---genomeDir ../human_ref_genome/viraltrack_star_index \
---genomeFastaFiles /home/mmartinez30/ Whitmore_scPathoQuant_testSets/Bradley_et_al_testSet/genomefiles/pNL4-3renamed_HIVonly.fa /home/skyemegan/refdata-gex-GRCh38-2024-A/fasta/genome.fa
-
-wait
 
 # finding the parameter file
-parameter_file="${sample}_parameters.txt$" # this is made outside of this script
+parameter_file="${sample}_parameters.txt" # this is made outside of this script
 
 # makiung the target file
-target_file="${sample}_targetfile.txt$"
+target_file="${sample}_targetfile.txt"
 
-echo "./$out_r2" >> $target_file # i'm not sure if this is providing the full path this might be problematic
+echo "./Viral-Trackfiles/$out_r2" >> $target_file
 
 Rscript edited_Viral_Track_scanning.R ./Viral-Trackfiles/$parameter_file ./Viral-Trackfiles/$target_file
 
@@ -60,3 +53,5 @@ wait
 Rscript edited_VT_demux.R ./Viral-Trackfiles/$parameter_file ./Viral-Trackfiles/$target_file
 
 wait
+
+echo "Viral-Track analysis done for sample $sample"
