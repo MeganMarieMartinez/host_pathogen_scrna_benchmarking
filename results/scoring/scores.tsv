@@ -1,0 +1,4 @@
+tool	label	truth_min_umis	call_min_umis	n_shared_inf	n_truthpos_inf	TP	FN	sensitivity	sens_lo	sens_hi	n_shared_uninf	n_truthpos_uninf	n_truthneg_uninf	FP	TN	FPR	fpr_lo	fpr_hi	FP_strict	FPR_strict	fprs_lo	fprs_hi
+DVsc	25M_rep1	1	1	12009	9884	9809	75	0.9924	0.9905	0.9939	12602	295	12307	70	12237	0.0057	0.0045	0.0072	361	0.0286	0.0259	0.0317
+DVsc	25M_rep1	2	1	12009	8498	8498	0	1.0000	0.9995	1.0000	12602	197	12405	164	12241	0.0132	0.0114	0.0154	361	0.0286	0.0259	0.0317
+DVsc	25M_rep1	5	1	12009	5897	5897	0	1.0000	0.9993	1.0000	12602	97	12505	264	12241	0.0211	0.0187	0.0238	361	0.0286	0.0259	0.0317

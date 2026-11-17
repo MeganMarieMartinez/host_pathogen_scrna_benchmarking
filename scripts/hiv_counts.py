@@ -63,7 +63,7 @@ def cmd_cellranger(a):
         for line in f:
             if line.startswith("%"):
                 continue
-            if not dims_seen:           
+            if not dims_seen:           # first non-comment line = "n_rows n_cols n_entries"
                 nr, nc, _ = line.split()
                 if int(nc) != len(barcodes) or int(nr) != len(feats):
                     sys.exit(f"ERROR: matrix is {nr}x{nc} but features/barcodes files give {len(feats)}x{len(barcodes)}")
@@ -100,9 +100,51 @@ def cmd_pathogentrack(a):
     print(f"{a.out}: {len(barcodes)} barcodes, {pos} with >=1 HIV UMI, {sum(counts.values())} HIV UMIs", file=sys.stderr)
 
 
+def cmd_dvsc(a):
+    # DVsc's countbyumi file lists ONLY cells that have virus reads: virus <TAB> barcode <TAB> count.
+    # The cell universe is therefore the UMI-tools whitelist DVsc was run with; every whitelist cell
+    # that is not listed gets 0. (Otherwise the scorer would silently drop DVsc's negative cells.)
+    universe = []
+    with open(a.whitelist) as f:
+        for line in f:
+            if line.strip():
+                universe.append(norm(line.split("\t")[0]))
+    universe_set = set(universe)
+    rx = re.compile(a.virus_regex, re.I)
+    counts, other, outside, n_lines = {}, set(), 0, 0
+    with open(a.countbyumi) as f:
+        for line in f:
+            c = line.split()
+            if len(c) < 3:
+                continue
+            n_lines += 1
+            if not rx.search(c[0]):
+                other.add(c[0])
+                continue
+            b = norm(c[1])
+            if b not in universe_set:
+                outside += 1
+            counts[b] = counts.get(b, 0) + int(float(c[2]))
+    if other:
+        print(f"WARNING: rows for other viruses ignored (do not match --virus-regex): {', '.join(sorted(other))}", file=sys.stderr)
+    if outside:
+        print(f"WARNING: {outside} rows have a barcode that is not in the whitelist {a.whitelist}", file=sys.stderr)
+    barcodes = universe + sorted(b for b in counts if b not in universe_set)
+    write_table(a.out, barcodes, counts)
+    pos = sum(1 for b in barcodes if counts.get(b, 0) > 0)
+    print(f"{a.out}: {len(barcodes)} barcodes (whitelist {len(universe)}), {pos} with >=1 HIV UMI, "
+          f"{sum(counts.values())} HIV UMIs (sum of column 3: check it is UMIs, not reads)", file=sys.stderr)
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
+    d = sub.add_parser("dvsc")
+    d.add_argument("--countbyumi", required=True, help="DVsc countbyumi file (virus, barcode, count)")
+    d.add_argument("--whitelist", required=True, help="the UMI-tools whitelist DVsc was run with (defines the cells)")
+    d.add_argument("--virus-regex", default="immunodeficiency|HIV|pNL43")
+    d.add_argument("--out", required=True)
+    d.set_defaults(fn=cmd_dvsc)
     c = sub.add_parser("cellranger")
     c.add_argument("--matrix-dir", required=True, help="Cell Ranger outs/filtered_feature_bc_matrix")
     c.add_argument("--gtf", required=True, help="genes.gtf(.gz) of the reference the matrix was made with")
