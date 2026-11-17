@@ -1,0 +1,17 @@
+tool	dataset	elapsed	max_rss_kb	stage	rep	threads	elapsed_s	user_s	sys_s	exit_status	load1_start	start_time
+DVsc	HIV_inf1_25M	16:44.76	461752	umi_whitelist	1	1	1004.76	1001.26	7.60	0	4.81	2026-11-16 14:25:56
+DVsc	HIV_inf1_25M	37:02.20	89280	umi_extract	1	1	2222.2	2167.59	16.17	0	9.45	2026-11-16 14:42:41
+DVsc	HIV_uninf1_25M	17:53.17	425580	umi_whitelist	1	1	1073.17	1005.60	6.63	0	20.01	2026-11-16 15:19:43
+CellRanger	hg38_HIV_EGFP	1:27:36	61541440	cellranger_mkref	1	8	5256	22451.05	1330.99	0	2.85	2026-11-16 14:24:33
+PathogenTrack	star_hg38	1:05:35	60506884	star_index_build	1	8	3935	17259.37	604.66	0	11.65	2026-11-16 14:53:36
+PathogenTrack	kraken_hiv	0:08.99	968960	kraken2_build	1	8	8.99	7.85	1.13	0	3.60	2026-11-16 16:00:18
+DVsc	HIV_uninf1_25M	29:08.72	89376	umi_extract	1	1	1748.72	1728.73	15.35	0	10.90	2026-11-16 15:37:36
+DVsc	HIV_inf1_25M	0:03.28	82880	dvsc_snakemake	1	4	3.28	6.13	0.26	1	2.11	2026-11-16 16:06:46
+DVsc	HIV_uninf1_25M	0:01.02	83520	dvsc_snakemake	1	4	1.02	5.52	0.13	1	2.10	2026-11-16 16:06:49
+PathogenTrack	smoke_HIV_inf1_25M	2:01.55	29850012	pathogentrack_smoke	1	8	121.55	155.92	47.88	0	3.63	2026-11-16 16:30:52
+PathogenTrack	smoke_HIV_uninf1_25M	1:56.15	29849248	pathogentrack_smoke	1	8	116.15	146.63	47.79	0	4.82	2026-11-16 16:35:59
+CellRanger	SRR6825024-25M	25:25.79	31906776	cellranger_count	1	8	1525.79	4973.28	389.62	0	1.77	2026-11-16 16:27:30
+CellRanger	SRR6825026-25M	24:28.56	31778480	cellranger_count	1	8	1468.56	4751.48	340.48	0	1.92	2026-11-16 16:52:55
+DVsc	HIV_inf1_25M	10:05.85	4539200	dvsc_snakemake	1	8	605.85	4068.18	286.13	0	1.38	2026-11-16 17:25:21
+DVsc	HIV_uninf1_25M	9:33.55	4533440	dvsc_snakemake	1	8	573.55	4181.06	271.84	0	7.95	2026-11-16 17:35:27
+PathogenTrack	HIV_inf1_25M	34:35.24	29906164	pathogentrack_run	1	8	2075.24	3206.05	176.54	0	10.72	2026-11-16 17:33:41
