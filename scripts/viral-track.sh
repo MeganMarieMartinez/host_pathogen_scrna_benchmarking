@@ -44,7 +44,7 @@ parameter_file="${sample}_parameters.txt" # this is made outside of this script
 # makiung the target file
 target_file="${sample}_targetfile.txt"
 
-echo "./Viral-Trackfiles/$out_r2" >> $target_file
+echo "./$out_r2" >> ./Viral-Trackfiles/$target_file
 
 Rscript edited_Viral_Track_scanning.R ./Viral-Trackfiles/$parameter_file ./Viral-Trackfiles/$target_file
 
