@@ -16,5 +16,6 @@ DVsc         	 HIV_inf1_25M        	 10:05.85	 4539200   	 dvsc_snakemake     	 
 DVsc         	 HIV_uninf1_25M      	 9:33.55 	 4533440   	 dvsc_snakemake     	   1	       8	 573.55   	 4181.06 	 271.84 	           0	 7.95       	 2026-11-16 17:35:27
 PathogenTrack	 HIV_inf1_25M        	 34:35.24	 29906164  	 pathogentrack_run  	   1	       8	 2075.24  	 3206.05 	 176.54 	           0	 10.72      	 2026-11-16 17:33:41
 ScPathoQuant 	 HIV_inf1_25M        	 7:10.97 	 7179820   	 scpathoquant_run   	   1	       1	 430.97   	 474.26  	 21.72  	           0	 -          	 2026-11-17 20:15:20
+ScPathoQuant 	 HIV_uninf1_25M      	 7:42.84 	 7897456   	 scpathoquant_run   	   1	       1	 462.84   	 507.09  	 26.65  	           0	 -          	 2026-11-18 13:33:24
 ViralTrack   	 HIV_inf1_25M    -   	 -       	 -         	 viraltrack_scanning	   1	       8	 -        	 -       	 -      	           0	 -          	 -
-ViralTrack   	 HIV_inf1_25M        	 16:56.12	 906756    	 viraltrack_demux   	   1	       8	 1016.12  	 997.77  	 997.77 	           0	 -          	 2026-11-17 12:26:23	 	 	 
+ViralTrack   	 HIV_inf1_25M        	 16:56.12	 906756    	 viraltrack_demux   	   1	       8	 1016.12  	 997.77  	 997.77 	           0	 -          	 2026-11-17 12:26:23
