@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+conda activate viral-track
+
 mkdir -p ViralTrack_Preprocessing
 cd ViralTrack_Preprocessing
 
