@@ -136,6 +136,12 @@ def cmd_dvsc(a):
           f"{sum(counts.values())} HIV UMIs (sum of column 3: check it is UMIs, not reads)", file=sys.stderr)
 
 
+def cmd_scpathoquant(a):
+   print() 
+
+def cmd_viraltrack(a):
+    print()
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -156,6 +162,14 @@ def main():
     t.add_argument("--taxon-regex", default="immunodeficiency|HIV")
     t.add_argument("--out", required=True)
     t.set_defaults(fn=cmd_pathogentrack)
+    s = sub.add_parser("scpathoquant")
+    s.add_argument("--pathogen_al_counts", required=True, help="ScPathoQuant's pathogen_al_counts.csv file")
+    s.add_argument("--out", required=True)
+    s.set_defaults(fn=cmd_scpathoquant)
+    v = sub.add_parser("viraltrack")
+    v.add_argument("--expression_table", required=True, help="Expression Table.tsv")
+    v.add_argument("--out", required=True)
+    v.set_defaults(fn=cmd_viraltrack)
     a = p.parse_args()
     a.fn(a)
 
