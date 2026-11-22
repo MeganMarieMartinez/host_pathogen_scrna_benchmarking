@@ -1,0 +1,10 @@
+N_thread=8
+Output_directory="/home/mmartinez30/final_benchmarking_runs/viral-track/hiv1_output"
+Index_genome="/home/mmartinez30/benchmarking/viral_track_tests/preprocessing/star_index"
+Viral_annotation_file="/home/mmartinez30/benchmarking/viral_track_tests/preprocessing/viral_track_annotation.txt"
+Name_run="hiv_infected_1_VT"
+Load_STAR_module=FALSE
+Load_samtools_module=FALSE
+Load_stringtie_module=FALSE
+Minimal_read_mapped=50
+

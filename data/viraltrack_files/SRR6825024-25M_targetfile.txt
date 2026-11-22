@@ -1,0 +1,1 @@
+/home/mmartinez30/final_benchmarking_runs/viral-track/ViralTrackResults/SRR6825024-25M_extracted_S1_L001_R2_0001.fastq
