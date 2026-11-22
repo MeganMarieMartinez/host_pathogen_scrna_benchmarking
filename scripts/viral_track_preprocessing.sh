@@ -1,57 +1,45 @@
 #!/usr/bin/env bash
 
-forward_read=$1
-reverse_read=$2
+mkdir -p ViralTrack_Preprocessing
+cd ViralTrack_Preprocessing
 
-mkdir ViralTrackResults
-cd ViralTrackResults
+##### running analysis on infected hiv sample (SRR6825024-25M) ####
 
-# changing the naming conventions to rename output files later
+infected_r1="/home/skyemegan/formatted_SRR6825024_25M/SRR6825024-25M_S1_L001_R1_0001.fastq"
+infected_r2="/home/skyemegan/formatted_SRR6825024_25M/SRR6825024-25M_S1_L001_R2_0001.fastq"
+uninfected_r1="/home/skyemegan/formatted_SRR6825026_25M/SRR6825026-25M_S1_L001_R1_0001.fastq"
+uninfected_r2="/home/skyemegan/formatted_SRR6825026_25M/SRR6825026-25M_S1_L001_R2_0001.fastq"
 
-# keeping just the filename, not the rest of the path 
-fwd_base=$(basename "$forward_read")
 
-# extracting just the sample name (SRR) and the suffix 
-sample=${fwd_base%%_S*} # splits at the _S 
-suffix=${fwd_base#"$sample"}
-
-# Build output names
-out_r1="${sample}_extracted${suffix}"                  # output names for umi_tools extract, R1
-r2_in="$(dirname "$forward_read")/${fwd_base/_R1_/_R2_}"   # R2 input in same dir as R1
-out_r2="${out_r1/_R1_/_R2_}"                           # output names for umi_tools extract, R2
-
-## running UMI tools ##
+### umi tools preprocessing for infected samples ###
+echo "UMI Tools preprocessing for SRR6825024_25M"
 
 # identify the correct cell barcodes
-umi_tools whitelist --stdin "$forward_read" \
+umi_tools whitelist --stdin "$infected_r1" \
                     --bc-pattern=CCCCCCCCCCCCCCCCNNNNNNNNNN \
-                    --log2stderr > "${sample}_whitelist.txt"
+                    --log2stderr > SRR6825024-25M_whitelist.txt;
 
 # extract barcodes and UMIS -> add to readnames
 umi_tools extract --bc-pattern=CCCCCCCCCCCCCCCCNNNNNNNNNN \
-                  --stdin "$forward_read" \
-                  --stdout "$out_r1" \
-                  --read2-in "$r2_in" \
-                  --read2-out="$out_r2" \
-                  --whitelist "${sample}_whitelist.txt"
-
-# STAR was already run, so to save time I will not include it in this script, but write it into another script for future use.
+                  --stdin "$infected_r1" \
+                  --stdout=SRR6825024-25M_extracted_S1_L001_R1_0001.fastq \
+                  --read2-in "$infected_r2" \
+                  --read2-out=SRR6825024-25M_extracted_S1_L001_R2_0001.fastq  \
+                  --whitelist=SRR6825024-25M_whitelist.txt;
 
 
-# finding the parameter file
-parameter_file="${sample}_parameters.txt" # this is made outside of this script
 
-# makiung the target file
-target_file="${sample}_targetfile.txt"
+### umi tools preprocessing for uninfected samples ###
+echo "UMI Tools preprocessing for SRR6825026_25M"
 
-echo "./$out_r2" >> ./Viral-Trackfiles/$target_file
+umi_tools whitelist --stdin "$uninfected_r1" \
+                    --bc-pattern=CCCCCCCCCCCCCCCCNNNNNNNNNN \
+                    --log2stderr > SRR6825024-25M_whitelist.txt;
 
-Rscript edited_Viral_Track_scanning.R ./Viral-Trackfiles/$parameter_file ./Viral-Trackfiles/$target_file
-
-wait
-
-Rscript edited_VT_demux.R ./Viral-Trackfiles/$parameter_file ./Viral-Trackfiles/$target_file
-
-wait
-
-echo "Viral-Track analysis done for sample $sample"
+# extract barcodes and UMIS -> add to readnames
+umi_tools extract --bc-pattern=CCCCCCCCCCCCCCCCNNNNNNNNNN \
+                  --stdin "$uninfected_r1" \
+                  --stdout=SRR6825026-25M_extracted_S1_L001_R1_0001.fastq \
+                  --read2-in "$uninfected_r2" \
+                  --read2-out=SRR6825026-25M_extracted_S1_L001_R1_0001.fastq  \
+                  --whitelist=SRR6825026-25M_whitelist.txt;
