@@ -37,7 +37,7 @@ export PATH=$HOME/miniconda3/envs/umitools/bin:$PATH
 ```
 # Running PathogenTrack on the HIV data
 
-The workflow has four steps. Steps 2 to 4 are scripts in `scripts/` and write timing rows to `results/timing.tsv`.
+The workflow has four steps. Steps 1 through 5 are scripts in `scripts/` and write timing rows to `results/timing.tsv`.
 
 **Inputs needed before starting:** the 25M FASTQ slices (`scripts/download.sh`), the human reference `refdata-gex-GRCh38-2024-A`, and the HIV contig from the human + HIV reference (see the main README for the sources).
 
@@ -111,7 +111,13 @@ Each run writes a folder `~/pathogentrack_work/runs_25M/<dataset>_rep<REP>/` con
 | `reads_barcoded.fq.gz`, `reads_barcoded_clean.fq.gz` | Reads after barcode extraction, and after fastp                             |
 | `unmapped_reads.fq`                                  | Reads that did not align to human (the Kraken2 input)                       |
 
-Example (first lines of `microbes.tsv`): <!-- TODO: paste 2 to 3 real lines (shortened) from HIV_inf1_25M_rep1/microbes.tsv -->
+Example (first lines of `~/HIV_inf1_25M_rep1/microbes.tsv`): 
+
+```
+gene    AAACCTGAGAATAGGG    AAACCTGAGACACGAC    
+AAACCTGAGAGTCTGG    AAACCTGAGCCTTGAT    
+AAACCTGAGTACATGA    AAACCTGAGTGTTTGC
+```
 
 The script prints the number of cells with at least one UMI per taxon at the end of each run. To turn `microbes.tsv` into the per-cell table used for scoring:
 
@@ -125,18 +131,20 @@ python scripts/hiv_counts.py pathogentrack \
 
 Run time and memory (`results/timing.tsv`, 8 threads, `rep` 1):
 
-| Step | Dataset | Elapsed | Peak memory (kB) |
-| --- | --- | --- | --- |
-| STAR index build (setup, once) | `star_hg38` | 1:05:35 | 60,506,884 |
-| Kraken2 database build (setup, once) | `kraken_hiv` | 0:08.99 | 968,960 |
-| Smoke test (1M pairs, not a result) | `smoke_HIV_inf1_25M` | 2:01.55 | 29,850,012 |
-| Smoke test (1M pairs, not a result) | `smoke_HIV_uninf1_25M` | 1:56.15 | 29,849,248 |
-| Full run | `HIV_inf1_25M` | 34:35.24 | 29,906,164 |
-| Full run | `HIV_uninf1_25M` | <!-- TODO --> | <!-- TODO --> |
+| Step                                 | Dataset                | Elapsed  | Peak memory (kB) |
+| ------------------------------------ | ---------------------- | -------- | ---------------- |
+| STAR index build (setup, once)       | `star_hg38`            | 1:05:35  | 60,506,884       |
+| Kraken2 database build (setup, once) | `kraken_hiv`           | 0:08.99  | 968,960          |
+| Smoke test (1M pairs, not a result)  | `smoke_HIV_inf1_25M`   | 2:01.55  | 29,850,012       |
+| Smoke test (1M pairs, not a result)  | `smoke_HIV_uninf1_25M` | 1:56.15  | 29,849,248       |
+| Full run, 25M                        | `HIV_inf1_25M`         | 34:35.24 | 29,906,164       |
+| Full run, 25M                        | `HIV_uninf1_25M`       | 32:33.47 | 29,916,064       |
+| Full run, 5M                         | `HIV_inf1_5M`          | 9:07.16  | 29,864,328       |
+| Full run, 5M                         | `HIV_uninf1_5M`        | 7:06.77  | 29,862,740       |
 
 The peak memory is dominated by loading the STAR human index, which is why it is almost the same for 1M and 25M read pairs. Cell Ranger's own run time (needed for the barcode list) is not included; see `results/timing.tsv` (`cellranger_count`).
 
-Accuracy against the Cell Ranger truth is in `results/scoring/scores.tsv`: <!-- TODO: add the PathogenTrack row summary (sensitivity, FPR) after scoring -->
+Accuracy against the Cell Ranger truth is in `results/scoring/scores.tsv`:<!-- TODO: add the PathogenTrack row summary (sensitivity, FPR) after scoring -->
 
 # Caveats
 
