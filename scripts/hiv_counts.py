@@ -153,7 +153,7 @@ def cmd_viraltrack(a):
     expression table from viral track is a tsv where columns = barcodes, rows = genes
     '''
     expression_table = a.expression_table
-    hiv_dict = pd.read_csv(expression_table, sep='\t').set_index('gene          ').loc['HIV-1_pNL4-3_1'].to_dict()
+    hiv_dict = pd.read_csv(expression_table, sep='\t').set_index('gene').loc['HIV-1_pNL4-3_1'].to_dict()
     barcodes = hiv_dict.keys()
     write_table(a.out, barcodes, hiv_dict)
     
