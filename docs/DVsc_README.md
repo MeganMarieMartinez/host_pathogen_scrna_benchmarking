@@ -51,48 +51,29 @@ All listed scripts used are in `scripts/`. They require the environment shown to
 
 | Script                    | Env      | Description                                                                                                                           |
 | ------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `download.sh`             | n/a      | Records how the 5M-read slices were made                                                                                              |
+| `download.sh`             | n/a      | Records how the 25M-read slices were made                                                                                              |
+|make_slices.sh | seqtk | 10M and 5M slices sampled from the 25M slice (scaling test)|
 | `setup_dvsc.sh`           | any      | Creates `~/dvsc_work`, which includes `preproc/`, `4/`, and  the `src/` symlink (to `src/` in original DVsc repo)                     |
 | `preprocess_umi_tools.sh` | umitools | UMI-tools whitelist + extract for infected and uninfected samples                                                                     |
 | `build_dvsc_index.sh`     | dvsc     | Splits the genome, renames HIV contig to `NC_pNL43`, builds the host index and the host+HIV index, tests HIV alignment. Ran in `tmux` |
 | `update_dvsc_anno.sh`     | any      | Makes `anno_hiv.txt` from DVsc's `anno.txt`. Appends a tab-separated row for the HIV contig `NC_pNL43` (length taken from the `.fai`) |
 | `copy_hiv_config.sh`      | any      | Writes `hiv_inf1.config`.                                                                                                             |
 | `time_wrapper.sh`         | dvsc     | Wraps a command with `/usr/bin/time -v` and appends elapsed time and peak memory to `results/timing.tsv`                              |
+|run_dvsc.sh | dvsc | One command: UMI-tools preprocessing (calls preprocess_umi_tools.sh), writes both configs, runs Snakemake with timing|
 | `export_envs.sh`          | base     | Exports the conda environments used, including `dvsc` and`umitools`, to `envs/*.yml` (--no-builds)`                                   |
 
 # Running DVsc
 
-Run inside `tmux` (jobs survive an SSH disconnect), with the `dvsc` environment active, from `~/dvsc_work`.
-
-**1. Preprocess (umitools env):**
-
-```bash
-bash ~/host_pathogen_scrna_benchmarking/scripts/preprocess_umi_tools.sh   # SIZE=25M by default
-```
-
-**2. Make the configs.** `copy_hiv_config.sh` writes the infected config. The uninfected config is the same with the sample name changed:
-
-```bash
-bash ~/host_pathogen_scrna_benchmarking/scripts/copy_hiv_config.sh
-cd ~/dvsc_work
-sed 's#HIV_inf1#HIV_uninf1#g' hiv_inf1.config > hiv_uninf1.config
-grep -E "fastq|whitelist|sample|outpath" hiv_uninf1.config    # should all say uninf1_25M
-```
-
-Key config values: `readlength: 98`, `method: scRNAseq`, `alignment: hisat2`, tool threads 4. The config also points to the host index, the host+HIV index and `anno_hiv.txt`.
-
-**3. Run Snakemake with timing:**
+Run inside `tmux`, from any folder:
 
 ```bash
 conda activate dvsc
-cd ~/dvsc_work
-T=~/host_pathogen_scrna_benchmarking/scripts/time_wrapper.sh
-
-STAGE=dvsc_snakemake THREADS=8 REP=1 bash $T DVsc HIV_inf1_25M \
-  snakemake -s ~/DVsc/analysis.snake --configfile hiv_inf1.config --cores 8
-STAGE=dvsc_snakemake THREADS=8 REP=1 bash $T DVsc HIV_uninf1_25M \
-  snakemake -s ~/DVsc/analysis.snake --configfile hiv_uninf1.config --cores 8
+bash ~/host_pathogen_scrna_benchmarking/scripts/run_dvsc.sh                 # 25M, both samples, REP=1
+TAG=5M  REP=1 bash ~/host_pathogen_scrna_benchmarking/scripts/run_dvsc.sh   # a smaller slice
+ONLY=SRR6825024 bash ~/host_pathogen_scrna_benchmarking/scripts/run_dvsc.sh # one sample
 ```
+
+The script (1) checks the tools and indexes, (2) runs `preprocess_umi_tools.sh` into `~/dvsc_work/preproc_<TAG>_rep<REP>/`, (3) writes `~/dvsc_work/runs_<TAG>_rep<REP>/<dataset>.config`, and (4) runs Snakemake through `time_wrapper.sh`. Finished samples are skipped (`<dataset>.done`).
 
 <!-- TODO: check these match the commands you actually ran (cores, REP). -->
 
@@ -100,7 +81,7 @@ Delete `~/dvsc_work/HIV_inf1_25M/` before a timed re-run: if the outputs exist, 
 
 ## Output
 
-Results for a sample are in `~/dvsc_work/<sample>/`:
+Results for a sample are in `~/dvsc_work/runs_<TAG>_rep<REP>/<dataset>/out/`:
 
 | File | Content |
 | --- | --- |
@@ -109,7 +90,13 @@ Results for a sample are in `~/dvsc_work/<sample>/`:
 | `*.gtf` | Assembled viral transcripts |
 | `count_ref.txt` | Reads per reference from the alignment |
 
-Example (first lines of `*.countbyumi.filter.txt`): <!-- TODO: paste 2 to 3 real lines from HIV_inf1_25M -->
+Example (first lines of `*.countbyumi.filter.txt`):
+
+```
+Human_immunodeficiency_virus_1	AAACCTGAGACACGAC	8
+Human_immunodeficiency_virus_1	AAACCTGAGAGTCTGG	31
+Human_immunodeficiency_virus_1	AAACCTGAGTACATGA	30
+```
 
 To turn this into the per-cell table used for scoring, see "Step 8" in the main README (`hiv_counts.py dvsc`).
 
