@@ -1,0 +1,3 @@
+sample	tool_a	tool_b	truth_min_umis	call_min_umis	n_cells	both_pos	only_a	only_b	both_neg	agreement	jaccard	err_a	err_b	err_both
+infected	DVsc	PathogenTrack	1	1	12009	10621	18	9	1361	0.9978	0.9975	75	75	70
+uninfected	DVsc	PathogenTrack	1	1	12602	359	2	0	12241	0.9998	0.9945	70	69	69
