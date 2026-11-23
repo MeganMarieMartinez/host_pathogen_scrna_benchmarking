@@ -39,5 +39,11 @@ run_sample() {   # run_sample <label> <folder in $SHARED> <SRR id>
   log "[$label] extract done (elapsed ${SECONDS}s)"
 }
  
-run_sample HIV_inf1_${SIZE}   ${DIR_INF:-HIV_Infected_1_SRR6825024}   SRR6825024
-run_sample HIV_uninf1_${SIZE} ${DIR_UNINF:-HIV_Uninfected_1_SRR6825026} SRR6825026
+# ONLY=<SRR id> runs just that sample (default: both)
+ONLY=${ONLY:-}
+if [ -z "$ONLY" ] || [ "$ONLY" = SRR6825024 ]; then
+  run_sample HIV_inf1_${SIZE}   ${DIR_INF:-HIV_Infected_1_SRR6825024}   SRR6825024
+fi
+if [ -z "$ONLY" ] || [ "$ONLY" = SRR6825026 ]; then
+  run_sample HIV_uninf1_${SIZE} ${DIR_UNINF:-HIV_Uninfected_1_SRR6825026} SRR6825026
+fi
