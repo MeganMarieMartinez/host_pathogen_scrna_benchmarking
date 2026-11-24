@@ -54,10 +54,7 @@ The infected and uninfected slices are made the same way. Parameters can be chan
 
 `scripts/make_slices.sh` makes 10M and 5M read-pair slices by sampling **from the 25M slice**
 (10M from 25M, then 5M from 10M, `seqtk sample -s 100` on both mates). It also gzips them into
-Cell Ranger-style names under `~/cellranger_work/fastq_<TAG>/` and links
-`barcodes_<SRR>-<TAG>.tsv` to the 25M barcode list. The 5M and 10M runs therefore use
-**Cell Ranger's 25M cell list**, and the 5M/10M slices are used for run time and memory only;
-accuracy is scored at 25M.
+Cell Ranger-style names under `~/cellranger_work/fastq_<TAG>/` <!--TODO: 10m and 5m depths no longer reuse 25m cell list. Accuracy is now score at all three depths.>
 
 # Software
 
