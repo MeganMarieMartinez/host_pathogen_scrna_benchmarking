@@ -23,7 +23,7 @@ To create cellranger output, run the cellranger_alignment.py file in the ./scrip
 
 ```
 # assuming we are running within cellranger_setup directory
-python cellranger_alignment.py -i path/to/fastq/files -g ./refdata-gex-GRCh38-2020-A
+python scripts/cellranger_alignment.py -i path/to/fastq/files -g /home/skyemegan/refdata-gex-GRCh38-2020-A
 ```
 # Truth Dataset - Cell Ranger Count
 Path to reference genome (human + HIV with integrated EGFP)

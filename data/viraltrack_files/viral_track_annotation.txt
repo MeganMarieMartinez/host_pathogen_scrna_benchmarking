@@ -1,0 +1,2 @@
+Name_sequence	Genome_length	Virus_name	Complete_segment_name	
+HIV-1_pNL4-3	9573	egfp_tagged_hiv	complete_genome
