@@ -143,7 +143,7 @@ def cmd_scpathoquant(a):
    df = pd.read_csv(a.pathogen_al_counts).set_index('cell_barcode')
    df.index = df.index.str.split('-').str[0]
    counts = df['umi'].to_dict()
-   universe = [norm(l) for l in opener(a.barcodes)]
+   universe = [norm(l) for l in opener(a.barcodes) if l.strip()]
    uset = set(universe)
    extra = sorted(b for b in counts if b not in uset)
    write_table(a.out, universe + extra, counts) 
@@ -182,6 +182,8 @@ def main():
     s.add_argument("--pathogen_al_counts", required=True, help="ScPathoQuant's pathogen_al_counts.csv file")
     s.add_argument("--out", required=True)
     s.set_defaults(fn=cmd_scpathoquant)
+    s.add_argument("--barcodes", required=True,
+               help="Cell Ranger barcodes.tsv(.gz) that defines the cells (missing cells get 0)")
     v = sub.add_parser("viraltrack")
     v.add_argument("--expression_table", required=True, help="Expression Table.tsv")
     v.add_argument("--out", required=True)

@@ -44,8 +44,6 @@ def main():
     ti, tu = load(a.truth_inf), load(a.truth_uninf)
     ci, cu = load(a.calls_inf), load(a.calls_uninf)
     check_universes([("infected", ti, ci), ("uninfected", tu, cu)], a.universe_check, a.min_truth_coverage)
-    if a.universe_check == "error" and any(bad):
-        sys.exit("Fix the tool table (see hiv_counts.py) or rerun with --universe-check warn/off to override.")
     shared_i = sorted(set(ti) & set(ci))
     shared_u = sorted(set(tu) & set(cu))
     print(f"shared barcodes: infected {len(shared_i)} (truth {len(ti)}, tool {len(ci)}); "
