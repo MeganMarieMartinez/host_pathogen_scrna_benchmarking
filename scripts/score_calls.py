@@ -2,23 +2,12 @@ import argparse
 import math
 import os
 import sys
+from barcode_tables import load, check_universes
 
 COLS = ["tool", "label", "truth_min_umis", "call_min_umis",
         "n_shared_inf", "n_truthpos_inf", "TP", "FN", "sensitivity", "sens_lo", "sens_hi",
         "n_shared_uninf", "n_truthpos_uninf", "n_truthneg_uninf", "FP", "TN", "FPR", "fpr_lo", "fpr_hi",
         "FP_strict", "FPR_strict", "fprs_lo", "fprs_hi"]
-
-
-def load(path):
-    d = {}
-    with open(path) as f:
-        header = f.readline().rstrip("\n").split("\t")
-        if header[:2] != ["barcode", "hiv_umis"]:
-            sys.exit(f"ERROR: {path} does not look like a hiv_counts.py table (header: {header})")
-        for line in f:
-            b, v = line.rstrip("\n").split("\t")[:2]
-            d[b.split("-")[0]] = int(v)
-    return d
 
 
 def wilson(k, n, z=1.96):
@@ -34,27 +23,6 @@ def wilson(k, n, z=1.96):
 def fmt(x):
     return "NA" if x is None else (f"{x:.4f}" if isinstance(x, float) else str(x))
 
-def check_universe(sample, truth, tool, mode, min_cov):
-    """Compare the barcode set of one truth table with one tool table."""
-    if mode == "off":
-        return
-    shared = len(set(truth) & set(tool))
-    cov = shared / len(truth) if truth else 0.0
-    n_zero = sum(1 for v in tool.values() if v == 0)
-    print(f"barcode universe ({sample}): truth {len(truth)}, tool {len(tool)}, shared {shared} "
-          f"({cov:.1%} of truth), tool-only {len(tool) - shared}, tool rows with 0 UMIs {n_zero}",
-          file=sys.stderr)
-    problems = []
-    if cov < min_cov:
-        problems.append(f"tool table covers only {cov:.1%} of the {len(truth)} truth barcodes "
-                        f"(minimum {min_cov:.0%}); the {len(truth) - shared} missing truth cells are dropped from scoring")
-    if tool and n_zero == 0:
-        problems.append("tool table has no zero-count rows, so it probably lists only positive cells "
-                        "and its negatives are missing")
-    for p in problems:
-        print(f"{'ERROR' if mode == 'error' else 'WARNING'} ({sample}): {p}", file=sys.stderr)
-    if problems and mode == "error":
-        return problems
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -75,7 +43,7 @@ def main():
 
     ti, tu = load(a.truth_inf), load(a.truth_uninf)
     ci, cu = load(a.calls_inf), load(a.calls_uninf)
-    bad = [check_universe("infected", ti, ci, a.universe_check, a.min_truth_coverage),check_universe("uninfected", tu, cu, a.universe_check, a.min_truth_coverage)]
+    check_universes([("infected", ti, ci), ("uninfected", tu, cu)], a.universe_check, a.min_truth_coverage)
     if a.universe_check == "error" and any(bad):
         sys.exit("Fix the tool table (see hiv_counts.py) or rerun with --universe-check warn/off to override.")
     shared_i = sorted(set(ti) & set(ci))

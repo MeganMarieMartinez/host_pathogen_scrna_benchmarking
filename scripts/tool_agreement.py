@@ -1,22 +1,11 @@
 import argparse
 import itertools
 import sys
+from barcode_tables import load, check_universes
 
 COLS = ["sample", "tool_a", "tool_b", "truth_min_umis", "call_min_umis", "n_cells",
         "both_pos", "only_a", "only_b", "both_neg", "agreement", "jaccard",
         "err_a", "err_b", "err_both"]
-
-
-def load(path):
-    d = {}
-    with open(path) as f:
-        header = f.readline().rstrip("\n").split("\t")
-        if header[:2] != ["barcode", "hiv_umis"]:
-            sys.exit(f"ERROR: {path} does not look like a hiv_counts.py table (header: {header})")
-        for line in f:
-            b, v = line.rstrip("\n").split("\t")[:2]
-            d[b.split("-")[0]] = int(v)
-    return d
 
 
 def main():
@@ -26,6 +15,10 @@ def main():
     ap.add_argument("--tool", nargs=3, action="append", metavar=("NAME", "INF", "UNINF"), required=True)
     ap.add_argument("--truth-threshold", type=int, default=1)
     ap.add_argument("--call-min", type=int, default=1)
+    ap.add_argument("--universe-check", choices=["error", "warn", "off"], default="error",
+                help="what to do if a tool table's barcodes don't cover the truth barcodes")
+    ap.add_argument("--min-truth-coverage", type=float, default=0.95,
+                help="minimum fraction of truth barcodes each tool table must contain")
     ap.add_argument("--out")
     a = ap.parse_args()
     if len(a.tool) < 2:
@@ -33,7 +26,10 @@ def main():
 
     truths = {"infected": load(a.truth_inf), "uninfected": load(a.truth_uninf)}
     calls = {name: {"infected": load(i), "uninfected": load(u)} for name, i, u in a.tool}
-
+    check_universes([(f"{name} {sample}", truths[sample], calls[name][sample])
+                 for name in calls for sample in truths],
+                a.universe_check, a.min_truth_coverage)
+    
     rows = []
     for sample, truth in truths.items():
         for na, nb in itertools.combinations(calls, 2):
