@@ -61,7 +61,6 @@ for entry in "${SAMPLES[@]}"; do
       fi
     done
  
-    ln -sfn "barcodes_${srr}-25M.tsv" "$CR_WORK/barcodes_${srr}-${tag}.tsv"
   done
 done
 
