@@ -65,9 +65,9 @@ accuracy is scored at 25M.
 | ------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------ |
 | DVsc          | commit `16e60b5eac7a469f80bed91308b99440613ae380` + `dvsc_changes.patch` | https://github.com/madisonglad/DVsc                                |
 | PathogenTrack | 0.2.3 (PyPI)                                                             | https://github.com/ncrna/PathogenTrack                             |
-| scPathoQuant  | <!-- TODO -->                                                            | https://github.com/galelab/scPathoQuant                            |
-| Viral-Track   | <!-- TODO -->                                                            | https://github.com/PierreBSC/Viral-Track                           |
-| Cell Ranger   | <!-- TODO: output of `cellranger --version` -->                          | https://www.10xgenomics.com/support/software/cell-ranger/downloads |
+| scPathoQuant  | 1.0		                                                               | https://github.com/galelab/scPathoQuant                            |
+| Viral-Track   | 1.0		                                                               | https://github.com/PierreBSC/Viral-Track                           |
+| Cell Ranger   | 10.1.0										                           | https://www.10xgenomics.com/support/software/cell-ranger/downloads |
 | STAR          | 2.7.10b                                                                  | https://github.com/alexdobin/STAR                                  |
 | Kraken2       | 2.1.3                                                                    | https://github.com/DerrickWood/kraken2                             |
 | fastp         | 0.22.0                                                                   | https://github.com/OpenGene/fastp                                  |
