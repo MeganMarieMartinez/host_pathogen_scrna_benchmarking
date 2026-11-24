@@ -34,6 +34,27 @@ def wilson(k, n, z=1.96):
 def fmt(x):
     return "NA" if x is None else (f"{x:.4f}" if isinstance(x, float) else str(x))
 
+def check_universe(sample, truth, tool, mode, min_cov):
+    """Compare the barcode set of one truth table with one tool table."""
+    if mode == "off":
+        return
+    shared = len(set(truth) & set(tool))
+    cov = shared / len(truth) if truth else 0.0
+    n_zero = sum(1 for v in tool.values() if v == 0)
+    print(f"barcode universe ({sample}): truth {len(truth)}, tool {len(tool)}, shared {shared} "
+          f"({cov:.1%} of truth), tool-only {len(tool) - shared}, tool rows with 0 UMIs {n_zero}",
+          file=sys.stderr)
+    problems = []
+    if cov < min_cov:
+        problems.append(f"tool table covers only {cov:.1%} of the {len(truth)} truth barcodes "
+                        f"(minimum {min_cov:.0%}); the {len(truth) - shared} missing truth cells are dropped from scoring")
+    if tool and n_zero == 0:
+        problems.append("tool table has no zero-count rows, so it probably lists only positive cells "
+                        "and its negatives are missing")
+    for p in problems:
+        print(f"{'ERROR' if mode == 'error' else 'WARNING'} ({sample}): {p}", file=sys.stderr)
+    if problems and mode == "error":
+        sys.exit("Fix the tool table (see hiv_counts.py) or rerun with --universe-check warn/off to override.")
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -46,10 +67,16 @@ def main():
     ap.add_argument("--truth-thresholds", type=int, nargs="+", default=[1, 2, 5])
     ap.add_argument("--call-min", type=int, default=1)
     ap.add_argument("--out", help="append rows to this file")
+    ap.add_argument("--universe-check", choices=["error", "warn", "off"], default="error",
+                help="what to do if a tool table's barcodes don't cover the truth barcodes")
+    ap.add_argument("--min-truth-coverage", type=float, default=0.9,
+                help="minimum fraction of truth barcodes the tool table must contain")
     a = ap.parse_args()
 
     ti, tu = load(a.truth_inf), load(a.truth_uninf)
     ci, cu = load(a.calls_inf), load(a.calls_uninf)
+    check_universe("infected", ti, ci, a.universe_check, a.min_truth_coverage)
+    check_universe("uninfected", tu, cu, a.universe_check, a.min_truth_coverage)
     shared_i = sorted(set(ti) & set(ci))
     shared_u = sorted(set(tu) & set(cu))
     print(f"shared barcodes: infected {len(shared_i)} (truth {len(ti)}, tool {len(ci)}); "
