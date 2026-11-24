@@ -1,3 +1,13 @@
 sample	tool_a	tool_b	truth_min_umis	call_min_umis	n_cells	both_pos	only_a	only_b	both_neg	agreement	jaccard	err_a	err_b	err_both
 infected	DVsc	PathogenTrack	1	1	12009	10621	18	9	1361	0.9978	0.9975	75	75	70
+infected	DVsc	scPathoQuant	1	1	12009	9885	754	12	1358	0.9362	0.9281	75	597	68
+infected	DVsc	ViralTrack	1	1	12009	10631	8	116	1254	0.9897	0.9885	75	26	23
+infected	PathogenTrack	scPathoQuant	1	1	12009	9884	746	13	1366	0.9368	0.9287	75	597	67
+infected	PathogenTrack	ViralTrack	1	1	12009	10621	9	126	1253	0.9888	0.9874	75	26	22
+infected	scPathoQuant	ViralTrack	1	1	12009	9890	7	857	1255	0.9281	0.9197	597	26	21
 uninfected	DVsc	PathogenTrack	1	1	12602	359	2	0	12241	0.9998	0.9945	70	69	69
+uninfected	DVsc	scPathoQuant	1	1	12602	315	46	2	12239	0.9962	0.8678	70	53	53
+uninfected	DVsc	ViralTrack	1	1	12602	359	2	4	12237	0.9995	0.9836	70	70	69
+uninfected	PathogenTrack	scPathoQuant	1	1	12602	315	44	2	12241	0.9963	0.8726	69	53	53
+uninfected	PathogenTrack	ViralTrack	1	1	12602	359	0	4	12239	0.9997	0.9890	69	70	69
+uninfected	scPathoQuant	ViralTrack	1	1	12602	316	1	47	12238	0.9962	0.8681	53	70	53
