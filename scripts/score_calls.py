@@ -54,7 +54,7 @@ def check_universe(sample, truth, tool, mode, min_cov):
     for p in problems:
         print(f"{'ERROR' if mode == 'error' else 'WARNING'} ({sample}): {p}", file=sys.stderr)
     if problems and mode == "error":
-        sys.exit("Fix the tool table (see hiv_counts.py) or rerun with --universe-check warn/off to override.")
+        return problems
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -75,8 +75,9 @@ def main():
 
     ti, tu = load(a.truth_inf), load(a.truth_uninf)
     ci, cu = load(a.calls_inf), load(a.calls_uninf)
-    check_universe("infected", ti, ci, a.universe_check, a.min_truth_coverage)
-    check_universe("uninfected", tu, cu, a.universe_check, a.min_truth_coverage)
+    bad = [check_universe("infected", ti, ci, a.universe_check, a.min_truth_coverage),check_universe("uninfected", tu, cu, a.universe_check, a.min_truth_coverage)]
+    if a.universe_check == "error" and any(bad):
+        sys.exit("Fix the tool table (see hiv_counts.py) or rerun with --universe-check warn/off to override.")
     shared_i = sorted(set(ti) & set(ci))
     shared_u = sorted(set(tu) & set(cu))
     print(f"shared barcodes: infected {len(shared_i)} (truth {len(ti)}, tool {len(ci)}); "
