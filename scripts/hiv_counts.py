@@ -140,13 +140,13 @@ def cmd_scpathoquant(a):
    '''
    pathogen_al_counts.csv: col1 = cell_barcode, col2 = umi counts
    '''
-   umi_counts = a.pathogen_al_counts
-   df = pd.read_csv(umi_counts).set_index('cell_barcode')
-   # reformatting the cell barcodes to remove -1 suffix
+   df = pd.read_csv(a.pathogen_al_counts).set_index('cell_barcode')
    df.index = df.index.str.split('-').str[0]
-   hiv_dict = df['umi'].to_dict()
-   barcodes = hiv_dict.keys()
-   write_table(a.out, barcodes, hiv_dict)
+   counts = df['umi'].to_dict()
+   universe = [norm(l) for l in opener(a.barcodes)]
+   uset = set(universe)
+   extra = sorted(b for b in counts if b not in uset)
+   write_table(a.out, universe + extra, counts) 
 
 def cmd_viraltrack(a):
     '''

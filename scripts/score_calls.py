@@ -69,7 +69,7 @@ def main():
     ap.add_argument("--out", help="append rows to this file")
     ap.add_argument("--universe-check", choices=["error", "warn", "off"], default="error",
                 help="what to do if a tool table's barcodes don't cover the truth barcodes")
-    ap.add_argument("--min-truth-coverage", type=float, default=0.9,
+    ap.add_argument("--min-truth-coverage", type=float, default=0.95,
                 help="minimum fraction of truth barcodes the tool table must contain")
     a = ap.parse_args()
 
